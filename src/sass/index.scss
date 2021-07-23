@@ -1,0 +1,21 @@
+// --------Imports---------- //
+
+@import "variables";
+@import "typograph";
+@import "reboot";
+
+@import "../pages/index";
+
+//homepage components
+@import "../components/index/banner";
+@import "../components/index/column";
+@import "../components/index/paragraph";
+@import "../components/index/paragraph";
+@import "../components/index/blackbar";
+@import "../components/index/split";
+
+//main component pieces
+@import "../components/button/button";
+@import "../components/cards/card";
+@import "../components/navbar/navbar";
+@import "../components/footer/footer";

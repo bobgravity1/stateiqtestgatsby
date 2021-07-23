@@ -1,0 +1,41 @@
+.button-main {
+
+		&-button {
+			z-index:200;
+			cursor: pointer;
+			color: white;
+			border: none;
+			border-radius: .2em;
+			font-weight: 600;
+		}
+	}
+	.normal {
+		font-size: 2rem;
+		padding: .3rem .5rem;
+	}
+	.large {
+		font-size: 1rem;
+		padding: .5rem .2rem;
+	}
+	.pink {
+		background-color: $primary-color;
+			transition: .4s all;     
+		&:hover {
+			background-color: $primary-color-hover;
+			box-shadow:none;
+		}
+	}
+	.blue {
+		background-color: $secondary-color;
+		transition: .4s all;
+		&:hover {
+			background-color: $secondary-color-hover;
+		}
+	}
+
+	@media(min-width:600px){	
+		.large {
+			font-size: 1.2rem;
+			padding: .7rem .5rem;
+		}
+	}

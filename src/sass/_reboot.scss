@@ -1,0 +1,37 @@
+// --------default settings (global styles)---------- //
+
+// default reset settings
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-font-smoothing: antialiased;
+    list-style-type: none;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-weight: normal;
+ 
+  }
+
+  .title{
+    
+    font-family:$secondary-font;
+  }
+
+  .text{
+    letter-spacing: .05rem;
+     font-family:$primary-font; 
+  }
+
+  @media(max-width:600px){
+    .c{
+      display:none
+    }
+  }
+  
+
+
+//   color classes
+
+

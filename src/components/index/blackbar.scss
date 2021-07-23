@@ -1,0 +1,42 @@
+.blackbar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color:white;
+    padding:4vh 0vh;
+    box-shadow: $shadow;
+    img{
+        width:10.5rem
+    }
+& h1{
+    font-size:2rem;
+}
+& p{
+    font-size:1.8rem;
+    margin-bottom: 1rem;
+    margin-top:0rem
+}
+& p:last-child{
+    font-size:1.8rem;
+    padding: 1vh 0vh;
+}
+& span{
+    color:$primary-color
+    }
+}
+
+@media(min-width:600px){
+    .blackbar{
+        img{
+            width:14.5rem
+        }
+    & h1{
+        font-size:2.7rem;
+    }
+    & p{
+        margin-top:.5rem
+    }
+}
+}

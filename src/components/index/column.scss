@@ -1,0 +1,51 @@
+.column{
+        background-color: black;
+        display:flex;
+        flex-wrap: wrap;
+        box-shadow: $shadow;
+        justify-content: space-between;
+        padding-top: 2.8vh;
+        padding-bottom: 21rem;
+        padding:0rem 1.5rem; 
+    &-card{            
+        padding:.5rem 0em; 
+    }
+    &-title{
+        font-size:1.7rem;
+        font-weight:500;
+        color:white;
+        margin-top: 1.5rem;
+    }
+    &-text{
+        color:white;
+        width:90vw;
+        margin-top: .5rem;
+        font-size:1rem;
+        letter-spacing: .05rem;
+        font-weight:400
+    }
+    p{
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+@media(min-width:1000px){
+    .column{
+        padding-top: 2.8vh;
+        padding:0rem 8rem; 
+        
+        &-text{
+            width:23vw;
+        } 
+        &-card{            
+            padding:2.5rem 0em; 
+        }
+        &-title{
+            margin-top: 1rem;
+        }
+        p{
+            margin-bottom: 0rem;
+        }
+    }
+}
