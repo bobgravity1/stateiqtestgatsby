@@ -5,7 +5,6 @@ import logoOne from '../../images/panel.svg'
 import logoTwo from '../../images/scans.svg'
 import logoThree from '../../images/world.svg'
 import logoFour from '../../images/charts.svg'
-import logoFive from '../../images/group.svg'
 import logoSix from '../../images/mobile-panel.svg'
 
 // components
