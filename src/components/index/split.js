@@ -13,7 +13,10 @@ import {Button} from '../button/button'
 const Split = () => {
     return (
 <>   
-    <div className="split">
+    <div className="split" data-sal="fade"
+    data-sal-delay="200"
+  data-sal-duration='400'
+  data-sal-easing="ease">
         <div className="split-piece split-left">
             <h1>Knowledge Is Power. <br />Why Not Test Your Abilities?</h1>
                <div className="split-left-image">
