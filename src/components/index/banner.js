@@ -2,12 +2,8 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 import styled from "styled-components";
-import { BiChevronDown } from 'react-icons/bi';
-import logo from '../../images/logo-text-inverse.svg';
 // comonents
 import { Button } from "../button/button";
-// data
-const links = [{ url: "/test", description: "this leads to the test" }];
 
 const BG = () => {
   const data = useStaticQuery(graphql`

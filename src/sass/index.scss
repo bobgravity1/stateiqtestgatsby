@@ -4,7 +4,9 @@
 @import "typograph";
 @import "reboot";
 
+//pages
 @import "../pages/index";
+@import "../pages/test";
 
 //homepage components
 @import "../components/index/banner";
@@ -16,6 +18,7 @@
 
 //main component pieces
 @import "../components/button/button";
-@import "../components/cards/card";
+@import "../components/cards/card_answer";
+@import "../components/cards/card_question";
 @import "../components/navbar/navbar";
 @import "../components/footer/footer";

@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useEffect, useContext} from 'react'
 import {Link} from 'gatsby'
 import logo from '../../images/logo.svg'
+import {NavActive} from '../../components/layout.js'
 
-const Navbar = ({active, setActive}) => {
-    
+const Navbar = () => {
+const {active, setActive}=useContext(NavActive)
+
+useEffect(()=>{
+    console.log(active)
+},[active])
 
     return (
         <>

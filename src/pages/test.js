@@ -1,19 +1,31 @@
-import * as React from "react"
+import React, {useContext, useEffect} from "react"
 import Layout from "../components/layout"
 //components
+import Card_Question from '../components/cards/card_question'
+import Card_Answer from '../components/cards/card_answer'
 import SEO from '../components/seo'
-import Button from '../components/button/button'
 // images
 import logo from '../images/logo.svg'
+//question deck--already randomized and shuffled
+import {deckShuffled} from "../questions/questionList"
+import {NavActive} from '../components/layout.js'
 
 const Test = () => {
+  const active=useContext(NavActive)
+
+  useEffect(()=>{
+    console.log(active)
+    window.scrollTo(0, 0);
+  },[])
+
   return (
     <Layout>
-    <SEO image={logo} />
-    <main>
-      <title>Home Page</title>
-      <a href="/">Return  Home</a>
-    </main>
+      <SEO title='test part of iq test' image={logo} />
+        <div className={`${active&&'test'}`}>
+        <Card_Question />
+        <Card_Answer/>
+          <a href="/">Return  Home</a>
+        </div>
     </Layout>
   )
 }

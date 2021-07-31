@@ -1,11 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import logo from '../../images/logo-text-inverse.svg';
 import facebook from '../../images/facebook.svg';
 import twitter from '../../images/twitter.svg';
 import youtube from '../../images/youtube.svg';
 import instagram from '../../images/instagram.svg';
+import {NavActive} from '../../components/layout.js'
 
 const Footer = () => {
+    const {active, setActive}=useContext(NavActive)
+    console.log(active)
     return (
         <div className='footer'>
             <div className='footer-container'>
