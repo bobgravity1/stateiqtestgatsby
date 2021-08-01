@@ -1,10 +1,9 @@
 .split{
-    margin: 1.5rem 0rem;
+    margin: 0rem 0rem;
     font-family: $primary-font;
     z-index:-20;
     display:flex;
     max-width: 100vw;
-   
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -20,8 +19,8 @@
         border-radius: 8px;
         p{
             width:75%;
-           font-weight: 600;
-           margin:1rem 0rem;
+            font-weight: 600;
+            margin:1rem 0rem;
        }
         h1{
             font-size:1.8rem;    
@@ -32,7 +31,7 @@
         &-left{
             color:white;
             background-color: black;
-            margin: 1.5rem 1.5rem;
+            margin: 1rem 1.5rem;
             &-image{             
             background-color: $test-blue;
             height: 20rem; 
@@ -54,8 +53,7 @@
               height:20rem;
               background-color: $test-blue;
             }  
-            img{
-                
+            img{   
                 position:relative;
                 bottom:2.2rem;
                 width:300px;
@@ -70,6 +68,7 @@
 
 @media(min-width:1000px){
     .split{
+        margin: 1.5rem 0rem;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
