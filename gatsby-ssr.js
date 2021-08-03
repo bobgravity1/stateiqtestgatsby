@@ -1,9 +1,16 @@
-const React = require("react")
+import Layout from './src/components/layout.js';
+import React, {createContext, useState} from 'react'
+// export context
+import GlobalContextProvider from './src/context/GlobalContextProvider'
 
-exports.wrapRootElement = ({ element }) => {
-  return (
-    <Provider values={values}>
-      {element}
-    </Provider>
-  )
+const App=({children})=>{
+    return (
+    <GlobalContextProvider>{children}</GlobalContextProvider>
+    )
 }
+// THIS IS IF WE WAMNT TO WRAP SITE IN NABVBAR AND FOOTER. 
+// NOT AS EFFECTIVE FOR OUR NEEDS OF PASSING STATE THROUGH ALL COMPONENTS
+export const wrapRootElement=({element, props})=>{
+    return (<App {...props}>{element}</App>)
+}
+
