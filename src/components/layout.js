@@ -34,13 +34,11 @@ const Layout = ({ children}) => {
   return (
 <>
 <NavActive.Provider value={value}>
-    <div className=''>
       <Navbar siteTitle={data.site.siteMetadata.title} />
-      <main className={`${active&&'body-active'}`}>
+      <div className={`${active&&'body-active'}`}>
         {children}
-      </main>  
+      </div>  
       <Footer />
-    </div>
 </NavActive.Provider>
     </>
   )

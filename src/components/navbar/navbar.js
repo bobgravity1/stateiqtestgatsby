@@ -7,7 +7,7 @@ const Navbar = () => {
 const {active, setActive}=useContext(NavActive)
 
 useEffect(()=>{
-    console.log(active)
+    
 },[active])
 
     return (

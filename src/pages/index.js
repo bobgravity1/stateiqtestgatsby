@@ -31,8 +31,7 @@ let setActive
 
   return (
     <>
-    <SEO description="a hard brown lump" title={'stateIQtest'} />
-      <Layout>
+    <SEO description="stateIQtest - the best test out there" title={'stateIQtest'} />
         <div className={`${active&&'body-active'}`}>
           <Banner />
           <Column />
@@ -45,7 +44,6 @@ let setActive
           <Blackbar />
           </div>
         </div>
-      </Layout>
   </>
   );
 };

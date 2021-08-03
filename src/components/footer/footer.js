@@ -8,7 +8,6 @@ import {NavActive} from '../../components/layout.js'
 
 const Footer = () => {
     const {active, setActive}=useContext(NavActive)
-    console.log(active)
     return (
         <div className='footer'>
             <div className='footer-container'>

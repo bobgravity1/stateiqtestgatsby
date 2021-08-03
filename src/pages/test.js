@@ -19,14 +19,13 @@ const Test = () => {
   },[])
 
   return (
-    <Layout>
+<>
       <SEO title='test part of iq test' image={logo} />
         <div className={`${active&&'test'}`}>
         <Card_Question />
         <Card_Answer/>
-          <a href="/">Return  Home</a>
         </div>
-    </Layout>
+</>
   )
 }
 
