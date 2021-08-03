@@ -37,10 +37,8 @@ const BG = () => {
             <hr className='banner-container-hr'  />
             Professionally built.
           </p>
-          <Button page='test' size="large" color="pink" />
-      
+          <Button page='test' size="large" color="pink" />   
         </div>
-
       </BackgroundImage>
     </>
   );

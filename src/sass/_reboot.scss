@@ -1,5 +1,7 @@
 // --------default settings (global styles)---------- //
-
+.c{
+  background-color:rgb(118, 207, 173);
+}
 // default reset settings
 * {
     margin: 0px;
@@ -22,10 +24,16 @@
      font-family:$primary-font; 
   }
 
+  // state
+//active-inactive nav bar
+.body-active{
+  transition:all ease-in .2s;
+  background-color: rgba(0,0,0,.4);
+  filter: blur(.8px);
+}
+
   @media(max-width:600px){
-    .c{
-      display:none
-    }
+ 
   }
   
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import {useStaticQuery, graphql} from 'gatsby'
 import Img from "gatsby-image"
+import {Button} from '../button/button'
 
 
 const Card_Answer = () => {
@@ -30,7 +31,9 @@ const Card_Answer = () => {
                 objectFit="contain"
                 objectPosition="50% 0%"
                 alt="" />
+                 
            </div> 
+           <Button page='test' size="large" color="pink" />
         </div>
         </>
     )

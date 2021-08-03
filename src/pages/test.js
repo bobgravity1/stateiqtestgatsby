@@ -23,7 +23,7 @@ const Test = () => {
 <>
     <Layout>
       <SEO title='test part of iq test' image={logo} />
-        <div className={`${active?'body-active':'test'}`}>
+        <div className={`${active?'test-active':'test'}`}>
         <Card_Question />
         <Card_Answer/>
         </div>

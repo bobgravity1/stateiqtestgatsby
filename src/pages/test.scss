@@ -1,5 +1,10 @@
 .test{
     background-color: $test-blue;
+    padding-top: 1rem;
+}
+.test-active{
+   background-color: rgb(192, 223, 229); 
+   padding-top: 1rem;
 }
 
 @media(min-width:768px){
