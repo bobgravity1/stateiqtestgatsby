@@ -9,7 +9,8 @@ import Paragraph from '../components/index/paragraph'
 import Split from '../components/index/split'
 import SEO from '../components/seo'
 // context
-import {NavActive} from '../components/layout'
+import {GlobalStateContext} from '../context/GlobalContextProvider'
+import {GlobalDispatchContext} from '../context/GlobalContextProvider'
 // page content
 const text=[
   'Many tests seek to measure what you already know. This is referred to as Crystallized IQ, or Crystallized Intelligence. Crystallized IQ can be expanded upon overtime, whereas Fluid IQ, or fluid intelligence/fluid reasoning classification attempts to measure what you have the capability to learn. Prior to the invention of the first IQ test, there was no viable way to measure intelligence (IQ), leading people to believe in many false presumptions about IQ and IQ tests; such as head size seen as being related to intelligence, intelligence being routinely correlated with birth order, and left handed people being more intelligent than their right handed counterparts. To read more about previous misconceptions about intelligence born from these previous IQ tests, click here.',
@@ -17,33 +18,29 @@ const text=[
   `IQ test scores have been seen as being generally reflective of financial success, but not always. IQ tests and IQ scores have become controversial in recent years, due to their dependency on culturally skewed imagery or language, skewing IQ test results towards people with certain cultural proclivities. IQ test scores have been seen as being generally reflective of financial success, but not always. IQ tests and IQ scores have become controversial in recent years, due to their dependency on culturally skewed imagery or language, skewing IQ test results towards people with certain cultural proclivities. To read more information about IQ tests, please click here. IQ tests like the ASVAB, SAT, ACT, seek to measure your fluid intelligence, also called fluid reasoning, or things you have the capability of learning. Your scores on these tests decide what job is most suited to both your crystallized knowledge and your fluid reasoning skills. Many employers use an IQ test of some variation in order to predict workplace performance, typically the Wonderlic test. IQ tests today have a variety of applications in both professional life and education. IQ scores have even been correlated with increased morbidity and mortality.`
 ]
 
-
-
 const IndexPage = () => {
-  const poop=useContext(NavActive)
+  const {active}=useContext(GlobalStateContext);
+  const dispatch=useContext(GlobalDispatchContext);
   useEffect(()=>{
-    console.log(active)
     window.scrollTo(0, 0);
   },[])
-
-let active;
-let setActive
-
   return (
     <>
-    <SEO description="stateIQtest - the best test out there" title={'stateIQtest'} />
-        <div className={`${active&&'body-active'}`}>
-          <Banner />
-          <Column />
-          <Paragraph text={text} header/>
-          <Blackbar /> 
-          <Paragraph text={text} />
-          <Blackbar button />
-          <Split />
-          <div className='c'>
-          <Blackbar />
+    <Layout>
+      <SEO description="stateIQtest - the best test out there" title={'stateIQtest'} />
+          <div className={`${active&&'body-active'}`}>
+            <Banner />
+            <Column />
+            <Paragraph text={text} header/>
+            <Blackbar /> 
+            <Paragraph text={text} />
+            <Blackbar button />
+            <Split />
+            <div className='c'>
+            <Blackbar />
+            </div>
           </div>
-        </div>
+    </Layout>
   </>
   );
 };

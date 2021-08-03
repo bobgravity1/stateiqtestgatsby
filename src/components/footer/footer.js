@@ -4,10 +4,8 @@ import facebook from '../../images/facebook.svg';
 import twitter from '../../images/twitter.svg';
 import youtube from '../../images/youtube.svg';
 import instagram from '../../images/instagram.svg';
-import {NavActive} from '../../components/layout.js'
 
 const Footer = () => {
-    const {active, setActive}=useContext(NavActive)
     return (
         <div className='footer'>
             <div className='footer-container'>

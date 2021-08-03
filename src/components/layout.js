@@ -4,21 +4,17 @@
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
-import React, {useState, createContext} from "react"
+import React, {useState} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "../sass/index.scss"
 //components
 import Navbar from "./navbar/navbar"
 import Footer from "./footer/footer"
-// export context
-export const NavActive=createContext()
+
+const Layout = ({ children}) => {  
 
 
-const Layout = ({ children}) => {
-  const [active, setActive]=useState(false)
-  const value={active, setActive}
-  
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -29,17 +25,14 @@ const Layout = ({ children}) => {
     }
   `)
 
-  
-
   return (
-<>
-<NavActive.Provider value={value}>
+    <>
       <Navbar siteTitle={data.site.siteMetadata.title} />
-      <div className={`${active&&'body-active'}`}>
+      <div>
+      {/* <div className={`${active&&'body-active'}`}> */}
         {children}
       </div>  
       <Footer />
-</NavActive.Provider>
     </>
   )
 }

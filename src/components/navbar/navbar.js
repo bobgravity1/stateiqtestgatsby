@@ -1,22 +1,27 @@
 import React, {useEffect, useContext} from 'react'
 import {Link} from 'gatsby'
 import logo from '../../images/logo.svg'
-import {NavActive} from '../../components/layout.js'
 
-const Navbar = () => {
-const {active, setActive}=useContext(NavActive)
+// context
+import {GlobalStateContext} from '../../context/GlobalContextProvider'
+import {GlobalDispatchContext} from '../../context/GlobalContextProvider'
+
+const Navbar = (props) => {
+const {active}=useContext(GlobalStateContext);
+const dispatch=useContext(GlobalDispatchContext);
 
 useEffect(()=>{
-    
+console.log(active)
 },[active])
 
     return (
         <>
-        <div className='plz body'>
-        <nav className={`${active&&'active'}`}>
+        <div className='plz body'>   
+    <nav className={`${active&&'active'}`}>
             <div className='logo'>
                 <img style={{height:'auto', margin:'1vh 0vw'}} src={logo} alt='iqtestlogo' />
             </div>
+
             <ul className={`${active&&'nav-active'} nav-links`}>
             <div>
                 <Link style={{ textDecoration:'none'}} to="/"><li>Why Our IQ Test</li></Link>
@@ -26,7 +31,8 @@ useEffect(()=>{
                 <Link style={{ textDecoration:'none'}} to="/"><li>FAQ </li></Link>
             </div>
             </ul>
-            <div onClick={()=>{setActive(!active)}} className='burger'>
+            
+            <div onClick={()=>dispatch({type:'SET_ACTIVE'})} className='burger'>
                 <div className="line1"></div>
                 <div className="line2"></div>
                 <div className="line3"></div>

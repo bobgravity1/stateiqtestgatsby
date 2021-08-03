@@ -8,23 +8,24 @@ import SEO from '../components/seo'
 import logo from '../images/logo.svg'
 //question deck--already randomized and shuffled
 import {deckShuffled} from "../questions/questionList"
-import {NavActive} from '../components/layout.js'
+// context
+import {GlobalStateContext} from '../context/GlobalContextProvider'
 
 const Test = () => {
-  const active=useContext(NavActive)
-
+  const {active}=useContext(GlobalStateContext)
   useEffect(()=>{
-    console.log(active)
     window.scrollTo(0, 0);
   },[])
-
+  
   return (
 <>
+    <Layout>
       <SEO title='test part of iq test' image={logo} />
-        <div className={`${active&&'test'}`}>
+        <div className='test'>
         <Card_Question />
         <Card_Answer/>
         </div>
+    </Layout>
 </>
   )
 }
