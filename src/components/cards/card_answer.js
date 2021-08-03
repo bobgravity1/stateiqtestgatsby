@@ -32,8 +32,8 @@ const Card_Answer = () => {
                 objectPosition="50% 0%"
                 alt="" />
                  
-           </div> 
-           <Button page='test' size="large" color="pink" />
+           </div>
+      
         </div>
         </>
     )

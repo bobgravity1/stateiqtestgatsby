@@ -1,0 +1,13 @@
+.testbuttons{
+  display:flex;
+  justify-content: center;
+		&-button {
+            min-width:8rem;
+            margin: 1.5rem 1rem;
+			cursor: pointer;
+			color: white;
+			border: none;
+			border-radius: .2em;
+			font-weight: 600;
+        }
+}

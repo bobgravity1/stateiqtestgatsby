@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 import styled from "styled-components";
-// comonents
+// components
 import { Button } from "../button/button";
 
 const BG = () => {
@@ -37,7 +37,7 @@ const BG = () => {
             <hr className='banner-container-hr'  />
             Professionally built.
           </p>
-          <Button page='test' size="large" color="pink" />   
+          <Button text='Start Test!' page='test' size="large" color="pink" />   
         </div>
       </BackgroundImage>
     </>

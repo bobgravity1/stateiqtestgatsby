@@ -5,6 +5,7 @@
     border-radius: 8px;
     max-height:65vh;
     padding:0rem;
+    margin-top:1.5rem;
     box-shadow: $shadow-light;
     font-family: $primary-font;
     &-container{
@@ -33,7 +34,8 @@
 @media(min-width:768px){
     .cardanswer{
         width:45vw;
-        height:85vh;
+        height:55vh;
+        margin-top:0rem;
         margin-bottom: 2rem;
     }
     p{

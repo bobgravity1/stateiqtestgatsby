@@ -1,15 +1,16 @@
 .test{
     background-color: $test-blue;
-    padding-top: 1rem;
+    padding-top: 1rem;   
 }
+
 .test-active{
-   background-color: rgb(192, 223, 229); 
-   padding-top: 1rem;
+    padding-top: 1rem;
+    background-color: rgb(149, 191, 199); 
 }
 
 @media(min-width:768px){
-    .test{
-        display:flex
+    .test-container{
+        display:flex;
     }
 }
 

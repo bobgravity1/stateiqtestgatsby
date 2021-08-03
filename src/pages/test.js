@@ -1,6 +1,8 @@
 import React, {useContext, useEffect} from "react"
 import Layout from "../components/layout"
 //components
+import { Button } from "../components/button/button";
+import Test_Buttons from '../components/button/testbuttons'
 import Card_Question from '../components/cards/card_question'
 import Card_Answer from '../components/cards/card_answer'
 import SEO from '../components/seo'
@@ -24,10 +26,14 @@ const Test = () => {
     <Layout>
       <SEO title='test part of iq test' image={logo} />
         <div className={`${active?'test-active':'test'}`}>
+          <div className='test-container'>
         <Card_Question />
         <Card_Answer/>
         </div>
-    </Layout>
+        <Test_Buttons />
+        </div>
+
+  </Layout>
 </>
   )
 }

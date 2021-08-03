@@ -11,7 +11,7 @@ const Blackbar = ({button}) => {
             <div>
            <h1 className='title'>{title[0]}</h1> 
            <p className='title'>"The best test out there."</p>
-           <Button page='test' size="large" color="pink"/>
+           <Button text='Start Test!' page='test' size="large" color="pink"/>
             </div>
         ):
         (
