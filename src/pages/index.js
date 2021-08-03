@@ -8,9 +8,6 @@ import Blackbar from '../components/index/blackbar'
 import Paragraph from '../components/index/paragraph'
 import Split from '../components/index/split'
 import SEO from '../components/seo'
-// context
-import {GlobalStateContext} from '../context/GlobalContextProvider'
-import {GlobalDispatchContext} from '../context/GlobalContextProvider'
 // page content
 const text=[
   'Many tests seek to measure what you already know. This is referred to as Crystallized IQ, or Crystallized Intelligence. Crystallized IQ can be expanded upon overtime, whereas Fluid IQ, or fluid intelligence/fluid reasoning classification attempts to measure what you have the capability to learn. Prior to the invention of the first IQ test, there was no viable way to measure intelligence (IQ), leading people to believe in many false presumptions about IQ and IQ tests; such as head size seen as being related to intelligence, intelligence being routinely correlated with birth order, and left handed people being more intelligent than their right handed counterparts. To read more about previous misconceptions about intelligence born from these previous IQ tests, click here.',
@@ -19,8 +16,6 @@ const text=[
 ]
 
 const IndexPage = () => {
-  const {active}=useContext(GlobalStateContext);
-  const dispatch=useContext(GlobalDispatchContext);
   useEffect(()=>{
     window.scrollTo(0, 0);
   },[])
@@ -28,7 +23,7 @@ const IndexPage = () => {
     <>
     <Layout>
       <SEO description="stateIQtest - the best test out there" title={'stateIQtest'} />
-          <div className={`${active&&'body-active'}`}>
+          <div>
             <Banner />
             <Column />
             <Paragraph text={text} header/>

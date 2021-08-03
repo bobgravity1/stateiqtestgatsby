@@ -9,7 +9,6 @@ import {GlobalDispatchContext} from '../../context/GlobalContextProvider'
 const Navbar = (props) => {
 const {active}=useContext(GlobalStateContext);
 const dispatch=useContext(GlobalDispatchContext);
-
 useEffect(()=>{
 console.log(active)
 },[active])

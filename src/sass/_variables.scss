@@ -23,3 +23,9 @@ $shadow-light:rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10p
 // box-shadow: 
 $shadow-inverse:rgba(0, 0, 0, 0.35) 0px -30px 24px -28px inset;
 $shadow-nav:rgba(0, 0, 0, 0.35) 0px -30px 16px -28px inset;
+
+//active-inactive nav bar
+.body-active{
+    background-color: rgba(0,0,0,.3);
+    filter: blur(1.3px);
+}
