@@ -4,7 +4,8 @@ export const GlobalStateContext=createContext()
 export const GlobalDispatchContext=createContext()
 
 const initialState={
-    active:false
+    active:false,
+    questions:[]
 }
 
 function reducer(state, action) { 

@@ -7,8 +7,8 @@ const Paragraph = ({header, text}) => {
             {header?
             <>
              <h1 className="title paragraph-header">History of IQ</h1>
-             <p className='text paragraph-paragraph'>{text[0]}</p>  
-             <p className='text paragraph-paragraph'>{text[1]}</p> 
+             <div className='text paragraph-paragraph'>{text[0]}</div>  
+             <div className='text paragraph-paragraph'>{text[1]}</div> 
              </>
              :
              <>

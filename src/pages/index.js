@@ -31,9 +31,7 @@ const IndexPage = () => {
             <Paragraph text={text} />
             <Blackbar button />
             <Split />
-            <div className='c'>
             <Blackbar />
-            </div>
           </div>
     </Layout>
   </>

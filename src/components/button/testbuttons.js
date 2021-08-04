@@ -1,10 +1,11 @@
 import React from 'react'
 import {Button} from './button.js'
+import {Link} from 'gatsby'
 
 const Test_Buttons = () => {
     return (
         <div className='testbuttons'>
-            <button className='blue xlarge testbuttons-button'>Home</button>
+            <Link to='/' exact><button className='blue xlarge testbuttons-button'>Home</button></Link>
             <button className='pink xlarge testbuttons-button'>Submit</button>
         </div>
     )

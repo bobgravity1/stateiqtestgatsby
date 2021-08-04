@@ -21,18 +21,18 @@
 		padding: .6rem .7rem;
 	}
 	.pink {
-		background-color: $primary-color;
+		background-color: $primary-color-hover;
 			transition: .4s all;     
 		&:hover {
-			background-color: $primary-color-hover;
+			background-color: rgb(255, 101, 178);
 			box-shadow:none;
 		}
 	}
 	.blue {
-		background-color: $secondary-color;
+		background-color: rgb(7, 148, 243);
 		transition: .4s all;
 		&:hover {
-			background-color: $secondary-color-hover;
+			background-color: rgb(57, 174, 252);
 		}
 	}
 

@@ -3,7 +3,6 @@ import {useStaticQuery, graphql} from 'gatsby'
 import Img from "gatsby-image"
 import {Button} from '../button/button'
 
-
 const Card_Answer = () => {
     const data = useStaticQuery(graphql`
     query AnswerImage {
@@ -24,7 +23,7 @@ const Card_Answer = () => {
         <div className='cardanswer'>
            <div className="cardanswer-container">
                 <div className="cardanswer-text">
-                    <h1>Answer 23</h1>          
+                    <h1>Answer</h1>          
                 </div>
                 <p>test question how many?</p> 
                 <Img fixed={data.image.childImageSharp.fixed}
