@@ -29,10 +29,11 @@ const Card_Answer = () => {
                 <Img fixed={data.image.childImageSharp.fixed}
                 objectFit="contain"
                 objectPosition="50% 0%"
-                alt="" />
-                 
+                alt="" />    
+           <p>MC KIND? show this from dispatch</p> 
+                         
            </div>
-      
+           {/* {MC KIND OF QUESTION????SHOW THIS KIND}      */}
         </div>
         </>
     )
