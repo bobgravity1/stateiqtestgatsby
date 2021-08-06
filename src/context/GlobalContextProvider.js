@@ -1,33 +1,33 @@
 import React, {createContext, useReducer} from 'react'
+// navbar state//reducer
+import activeNavReducer from '../reducers/activeNavReducer'
+import {initialState} from '../reducers/activeNavReducer'
+// questions state//reducer
+import questionsReducer from '../reducers/questionsReducer'
+import {deckInitialState} from '../reducers/questionsReducer'
+//navbar state context
+export const ActiveNavStateContext=createContext()
+export const ActiveNavDispatchContext=createContext()
+//question shufflex deck state context
+export const QuestionsStateContext=createContext()
+export const QuestionsDispatchContext=createContext()
 
-export const GlobalStateContext=createContext()
-export const GlobalDispatchContext=createContext()
-
-const initialState={
-    active:false,
-    questions:[]
-}
-
-function reducer(state, action) { 
-    switch (action.type) {
-      case 'SET_ACTIVE':
-        return {
-            ...state, 
-            active:!state.active
-        }
-  default:
-    throw new Error('ERROR - Refer to Reducer')
-}   
-}
-  
+//this is where the GLOBAL CONTEXT is DEFINED and passed down
+//it is best to split up state and dispatch for performance reasonsPropTypes.
+//less re renders if only one changes. sometimes only state needed etc. 
 const GlobalContextProvider=({children})=>{
-    const [state, dispatch] = useReducer(reducer, initialState);
+    const [state, dispatch] = useReducer(activeNavReducer, initialState);
+    const [deckState, deckDispatch] = useReducer(questionsReducer, deckInitialState);
     return (
-        <GlobalDispatchContext.Provider value={dispatch}>
-            <GlobalStateContext.Provider value={state}>
-                {children}
-            </GlobalStateContext.Provider>
-        </GlobalDispatchContext.Provider>
+        <QuestionsStateContext.Provider value={deckState}>
+            <QuestionsDispatchContext.Provider value={deckDispatch}>
+                <ActiveNavDispatchContext.Provider value={dispatch}>
+                    <ActiveNavStateContext.Provider value={state}>
+                        {children}
+                    </ActiveNavStateContext.Provider>
+                </ActiveNavDispatchContext.Provider>
+            </QuestionsDispatchContext.Provider>
+        </QuestionsStateContext.Provider>
 )
 }
 

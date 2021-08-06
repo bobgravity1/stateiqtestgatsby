@@ -12,12 +12,12 @@ import "../sass/index.scss"
 import Navbar from "./navbar/navbar"
 import Footer from "./footer/footer"
 // context
-import {GlobalDispatchContext} from '../context/GlobalContextProvider'
-import {GlobalStateContext} from '../context/GlobalContextProvider'
+import {ActiveNavDispatchContext} from '../context/GlobalContextProvider'
+import {ActiveNavStateContext} from '../context/GlobalContextProvider'
 
 const Layout = ({ children}) => {  
-  const {active}=useContext(GlobalStateContext);
-  const dispatch=useContext(GlobalDispatchContext);
+  const {active}=useContext(ActiveNavStateContext);
+  const dispatch=useContext(ActiveNavDispatchContext);
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -28,7 +28,6 @@ const Layout = ({ children}) => {
       }
     }
   `)
-
   return (
     <>
       <Navbar siteTitle={data.site.siteMetadata.title} />
@@ -40,7 +39,6 @@ const Layout = ({ children}) => {
     </>
   )
 }
-
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }

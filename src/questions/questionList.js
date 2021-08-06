@@ -783,6 +783,6 @@ const deckThree=deckMaker(logicType)
 const deck=deckOne.concat(deckTwo)
 const finalDeck=deck.concat(deckThree)
 const shuffledFinal=shuffler(finalDeck);
-export const deckShuffled=shuffler(shuffledFinal)
 
+export const deckShuffled=shuffler(shuffledFinal)
 // export the final deck

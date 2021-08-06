@@ -5,7 +5,7 @@ module.exports = {
     siteUrl: "https://www.stateiqtest.org",
     title: "StateIQTest - State of the Art IQ Test",
     author: "Robert O'Toole, Andrew O'Toole",
-    image:"/logo.svg",
+    image:"/header-meta-icon.svg",
     url: "https://www.stateiqtest.org",
     description:"good iq test"
   },

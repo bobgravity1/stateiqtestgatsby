@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Card_Question = () => {
     const data = useStaticQuery(graphql`
     query QuestionImage {
-      image: file(relativePath: { eq: "questions/logicTwentyFive.png" }) {
+      image: file(relativePath: { eq: "questions/spatialSixteen-two.png" }) {
         childImageSharp {
           fixed(width: 300){
             ...GatsbyImageSharpFixed_withWebp

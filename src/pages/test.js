@@ -8,14 +8,16 @@ import Card_Answer from '../components/cards/card_answer'
 import SEO from '../components/seo'
 // images
 import logo from '../images/logo.svg'
-//question deck--already randomized and shuffled
-import {deckShuffled} from "../questions/questionList"
-//context
-import {GlobalStateContext} from '../context/GlobalContextProvider'
+//questions-context
+import {QuestionsStateContext} from '../context/GlobalContextProvider'
+import {QuestionsDispatchContext} from '../context/GlobalContextProvider'
+//navbar-context
+import {ActiveNavStateContext} from '../context/GlobalContextProvider'
 
 
 const Test = () => {
-  const {active}=useContext(GlobalStateContext);
+  const {active}=useContext(ActiveNavStateContext);
+  const {deck}=useContext(QuestionsStateContext)
 
   useEffect(()=>{
     window.scrollTo(0, 0);
@@ -32,8 +34,7 @@ const Test = () => {
         </div>
         <Test_Buttons />
         </div>
-
-  </Layout>
+    </Layout>
 </>
   )
 }

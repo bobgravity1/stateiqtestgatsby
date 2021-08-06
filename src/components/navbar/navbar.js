@@ -2,12 +2,12 @@ import React, {useEffect, useContext} from 'react'
 import {Link} from 'gatsby'
 import logo from '../../images/logo.svg'
 // context
-import {GlobalStateContext} from '../../context/GlobalContextProvider'
-import {GlobalDispatchContext} from '../../context/GlobalContextProvider'
+import {ActiveNavStateContext} from '../../context/GlobalContextProvider'
+import {ActiveNavDispatchContext} from '../../context/GlobalContextProvider'
 
 const Navbar = (props) => {
-const {active}=useContext(GlobalStateContext);
-const dispatch=useContext(GlobalDispatchContext);
+const {active}=useContext(ActiveNavStateContext);
+const dispatch=useContext(ActiveNavDispatchContext);
     return (
     <>
     <div className='plz body'>   
