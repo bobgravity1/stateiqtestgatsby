@@ -21,6 +21,15 @@ const Card_Answer = ({data}) => {
                     <h1>Answer</h1>          
                 </div>     
            </div>
+           <div className="cardanswer-image">
+                     {/* here we are filtering through the nodes */}
+          {question.answerPhoto&&data.allFile.edges.map((item, index) => {
+                  console.log(item.node.name)
+                if(question.answerPhoto.value===item.node.name){
+                  return <GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt="" />
+                }
+                })} 
+            </div>
         <section>
            <ul>
            {question.options&&question.options.map(option=>(
@@ -32,16 +41,8 @@ const Card_Answer = ({data}) => {
            </ul>
         </section>
         <section>
-        {/* PUT THE LOGIC HERE FOR FIB*/}
+        {/* PUT THE LOGIC HERE FOR FIB */}
         </section>
-           {/* {MC KIND OF QUESTION????SHOW THIS KIND}      */}
-          {/* here we are filtering through the nodes */}
-          {question.answerPhoto&&data.allFile.edges.map((item, index) => {
-                  console.log(item.node.name)
-                if(question.answerPhoto.value===item.node.name){
-                  return <GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt="" />
-                }
-                })} 
         </div>
         </>
     )
