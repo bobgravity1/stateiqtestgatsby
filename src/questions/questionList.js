@@ -14,13 +14,13 @@ const spatialType = [
     id: nanoid(),
     title: "Question One",
     correct:false,
-    description: "Which is the odd one out?",
+    question: "Which is the odd one out?",
     answer:'C',
     category:'spatial',
     type:'MCphoto',
     word:false,
     questionPhoto:{
-      id:nanoid(), value:'./photos/spatialOne.png'
+      id:nanoid(), value:'spatialOne'
     },
     options: [
       {id:nanoid(),value:'A'},
@@ -35,13 +35,13 @@ const spatialType = [
     id: nanoid(),
     title: "Question Two",
     correct:false,
-    description: "Which is the odd one out?",
+    question: "Which is the odd one out?",
     answer:'C',
     category:'spatial',
     type:'MCphoto',
     word:false,
     questionPhoto:{
-      id:nanoid(), value:'./photos/spatialTwo.png'
+      id:nanoid(), value:'spatialTwo'
     },
     options: [
       {id:nanoid(),value:'A'},
@@ -55,13 +55,13 @@ const spatialType = [
     id: nanoid(),
     title: "Question Three",
     correct:false,
-    description: "How many circles contain a pink dot?",
+    question: "How many circles contain a pink dot?",
     answer:'12',
     category:'spatial',
     type:'FIBphoto',
     word:false,
     questionPhoto:{
-      id:nanoid(), value:'./photos/spatialThree.png'
+      id:nanoid(), value:'spatialThree'
     },
     options: [
       {id:nanoid(),value:null}
@@ -71,16 +71,16 @@ const spatialType = [
     id: nanoid(),
     title: "Question Four",
     correct:false,
-    description: "When the below image is folded to form a cube, which is the only one of the following that can be produced?",
+    question: "When the below image is folded to form a cube, which is the only one of the following that can be produced?",
     answer:'D',
     category:'spatial',
     type:'MCphotoTwo',
     word:false,
     questionPhoto:{
-      id:nanoid(), value:'./photos/spatialFour-One.png'
+      id:nanoid(), value:'spatialFour-One'
     },
     answerPhoto:{
-      id:nanoid(), value:'./photos/spatialFour-Two.png'
+      id:nanoid(), value:'spatialFour-Two'
     },
     options: [
       {id:nanoid(),value:'A'},
@@ -94,8 +94,11 @@ const spatialType = [
     id: nanoid(),
     title: "Question Five",
     correct:false,
-    description: "You have 59 cube shaped blocks. What is the minimum number that needs to be taken away to have a square cube with none left over?",
+    question: "You have 59 cube shaped blocks. What is the minimum number that needs to be taken away to have a square cube with none left over?",
     answer:'9',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:true,
     category:'spatial',
     type:'FIB',
@@ -105,7 +108,7 @@ const spatialType = [
       title: "Question Six",
       correct:false,
       category:'spatial',
-      description: "When the image above is folded into a cube, which of the following answer is the only one that can be produced?",
+      question: "When the image above is folded into a cube, which of the following answer is the only one that can be produced?",
       answer:'B',
       word:false,
       type:'MCphotoTwo',
@@ -117,10 +120,10 @@ const spatialType = [
         {id:nanoid(),value:'E'}
       ],
       questionPhoto:{
-        id:nanoid(), value:'./photos/spatialSix-One.png'
+        id:nanoid(), value:'spatialSix-One'
       },
       answerPhoto:{
-        id:nanoid(), value:'./photos/spatialSix-Two.png'
+        id:nanoid(), value:'spatialSix-Two'
       }
     },
   {
@@ -128,7 +131,7 @@ const spatialType = [
     title: "Question Seven",
     correct:false,
     category:'spatial',
-    description: "What letter is directly opposite the letter that is two letters away clockwise from the letter that is directly opposite the letter E",
+    question: "What letter is directly opposite the letter that is two letters away clockwise from the letter that is directly opposite the letter E",
     answer:'C',
     word:false,
     type:'MCphoto',
@@ -143,7 +146,7 @@ const spatialType = [
       {id:nanoid(),value:'H'}
     ],
     questionPhoto:{
-      id:nanoid(), value:'./photos/spatialSeven.png'
+      id:nanoid(), value:'spatialSeven'
     }
   },
   {
@@ -151,8 +154,11 @@ const spatialType = [
     title: "Question Eight",
     correct:false,
     category:'spatial',
-    description: "Andrew has to move 7 boxes, but he can only carry two boxes at one time. How many trips does he have to make?",
+    question: "Andrew has to move 7 boxes, but he can only carry two boxes at one time. How many trips does he have to make?",
     answer:'A',
+    questionPhoto:{
+      id:nanoid(), value:'spatialTen-One'
+    },
     word:true,
     type:'MC',
     options: [
@@ -167,7 +173,7 @@ const spatialType = [
       title: "Question Ten",
       correct:false,
       category:'spatial',
-      description: "Which is the missing box?",
+      question: "Which is the missing box?",
       answer:'C',
       word:false,
       type:'MCphotoTwo',
@@ -180,17 +186,17 @@ const spatialType = [
         {id:nanoid(),value:'F'}
       ],
       questionPhoto:{
-        id:nanoid(), value:'./photos/spatialTen-One.png'
+        id:nanoid(), value:'spatialTen-One'
       },
       answerPhoto:{
-        id:nanoid(), value:'./photos/spatialTen-Two.png'
+        id:nanoid(), value:'spatialTen-Two'
       }
     },
     {
       id: nanoid(),
       title: "Question Eleven",
       correct:false,
-      description: "Which option comes next in the above sequence?",
+      question: "Which option comes next in the above sequence?",
       answer:'B',
       word:false,
       type:'MCphotoTwo',
@@ -202,39 +208,39 @@ const spatialType = [
         {id:nanoid(),value:'D'},
       ],
       questionPhoto:{
-        id:nanoid(), value:'./photos/spatialEleven-one.png'
+        id:nanoid(), value:'spatialEleven-one'
       },
       answerPhoto:{
-        id:nanoid(), value:'./photos/spatialEleven-two.png'
+        id:nanoid(), value:'spatialEleven-two'
       }
     },
     {
       id: nanoid(),
       title: "Question Twelve",
       correct:false,
-      description: "How many DIFFERENTLY sized circles are shown in this image?",
+      question: "How many DIFFERENTLY sized circles are shown in this image?",
       answer:'6',
       category:'spatial',
       type:'FIBphoto',
       word:false,
       questionPhoto:{
-        id:nanoid(), value:'./photos/spatialTwelve.png'
+        id:nanoid(), value:'spatialTwelve'
       }
     },
       {
         id: nanoid(),
         title: "Question Fourteen",
         correct:false,
-        description: "Which square should replace the question mark?",
+        question: "Which square should replace the question mark?",
         answer:'C',
         category:'spatial',
         type:'MCphotoTwo',
         word:false,
         questionPhoto:{
-          id:nanoid(), value:'./photos/spatialFourteen-one.png'
+          id:nanoid(), value:'spatialFourteen-one'
         },
         answerPhoto:{
-          id:nanoid(), value:'./photos/spatialFourteen-two.png'
+          id:nanoid(), value:'spatialFourteen-two'
         },
         options: [
           {id:nanoid(),value:'A'},
@@ -248,16 +254,16 @@ const spatialType = [
         id: nanoid(),
         title: "Question Fifteen",
         correct:false,
-        description: "Which of the following is most similar to the image above?",
+        question: "Which of the following is most similar to the image above?",
         answer:'B',
         category:'spatial',
         type:'MCphotoTwo',
         word:false,
         questionPhoto:{
-          id:nanoid(), value:'./photos/spatialFifteen-one.png'
+          id:nanoid(), value:'spatialFifteen-one'
         },
         answerPhoto:{
-          id:nanoid(), value:'./photos/spatialFifteen-two.png'
+          id:nanoid(), value:'spatialFifteen-two'
         },
         options: [
           {id:nanoid(),value:'A'},
@@ -271,16 +277,16 @@ const spatialType = [
         id: nanoid(),
         title: "Question Sixteen",
         correct:false,
-        description: "Which is the missing tile?",
+        question: "Which is the missing tile?",
         answer:'C',
         category:'spatial',
         type:'MCphotoTwo',
         word:false,
         questionPhoto:{
-          id:nanoid(), value:'./photos/spatialSixteen-one.png'
+          id:nanoid(), value:'spatialSixteen-one'
         },
         answerPhoto:{
-          id:nanoid(), value:'./photos/spatialSixteen-two.png'
+          id:nanoid(), value:'spatialSixteen-two'
         },
         options: [
           {id:nanoid(),value:'A'},
@@ -298,8 +304,11 @@ const logicType = [
     title: "Question Five",
     correct:false,
     category:'logic',
-    description: "Out of the four given shapes which is the odd one out?",
+    question: "Out of the four given shapes which is the odd one out?",
     answer:'C',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:true,
     type:'MC',
     options: [
@@ -313,16 +322,16 @@ const logicType = [
     id: nanoid(),
     title: "Question Six",
     correct:false,
-    description: "Find the missing tile",
+    question: "Find the missing tile",
     answer:'D',
     category:'logic',
     type:'MCphotoTwo',
     word:false,
     questionPhoto:{
-      id:nanoid(), value:'./photos/logicSix-one.png'
+      id:nanoid(), value:'logicSix-one'
     },
     answerPhoto:{
-      id:nanoid(), value:'./photos/logicSix-two.png'
+      id:nanoid(), value:'logicSix-two'
     },
     options: [
       {id:nanoid(),value:'A'},
@@ -337,8 +346,11 @@ const logicType = [
     id: nanoid(),
     title: "Question Fifteen",
     correct:false,
-    description: "4 Workers lay 48 bricks in one hour. How many workers would it take to lay 192 bricks in one hour?",
+    question: "4 Workers lay 48 bricks in one hour. How many workers would it take to lay 192 bricks in one hour?",
     answer:'16',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:true,
     category:'logic',
     type:'FIB',
@@ -347,8 +359,11 @@ const logicType = [
     id: nanoid(),
     title: "Question Sixteen",
     correct:false,
-    description: "10, 30, 32, 96, 98, 294, 296, ?, ?-What two numbers should replace the question marks?",
+    question: "10, 30, 32, 96, 98, 294, 296, ?, ?-What two numbers should replace the question marks?",
     answer:'B',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:true,
     category:'logic',
     type:'MC',
@@ -363,8 +378,11 @@ const logicType = [
     id: nanoid(),
     title: "Question Seventeen",
     correct:false,
-    description: "If one Tera is a thousand Gigs and one Gigs is a thousand Megas, how many Megas are in a tera?",
+    question: "If one Tera is a thousand Gigs and one Gigs is a thousand Megas, how many Megas are in a tera?",
     answer:'A',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:true,
     category:'logic',
     type:'MC',
@@ -379,8 +397,11 @@ const logicType = [
     id: nanoid(),
     title: "Question Eighteen",
     correct:false,
-    description: "9, 1, 50, 6, 45, 11, 40, 16, 35, 21, ?, ? Which numbers should replace the question marks?",
+    question: "9, 1, 50, 6, 45, 11, 40, 16, 35, 21, ?, ? Which numbers should replace the question marks?",
     answer:'A',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:true,
     category:'logic',
     type:'MC',
@@ -395,8 +416,11 @@ const logicType = [
     id: nanoid(),
     title: "Question Nineteen",
     correct:false,
-    description: "5862 is to 714----3498 is to 1113----9516 is to 156----8257 is to ?",
+    question: "5862 is to 714----3498 is to 1113----9516 is to 156----8257 is to ?",
     answer:'C',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:true,
     category:'logic',
     type:'MC',
@@ -411,8 +435,11 @@ const logicType = [
     id: nanoid(),
     title: "Question Twenty",
     correct:false,
-    description: "Bob is twice as old as Bill, but in five years time he will only be one and a half times as old. How old is Bob now?",
+    question: "Bob is twice as old as Bill, but in five years time he will only be one and a half times as old. How old is Bob now?",
     answer:'10',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:false,
     category:'logic',
     type:'FIB',
@@ -421,8 +448,11 @@ const logicType = [
     id: nanoid(),
     title: "Question TwentyOne",
     correct:false,
-    description: "How many minutes is it before midnight if 32 minutes ago it was three times as many minutes past 22.00?",
+    question: "How many minutes is it before midnight if 32 minutes ago it was three times as many minutes past 22.00?",
     answer:'22',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:false,
     category:'logic',
     type:'FIB',
@@ -431,8 +461,11 @@ const logicType = [
     id: nanoid(),
     title: "Question TwentyThree",
     correct:false,
-    description: "What is one-third of one-quarter of one-fifth of one-half of 120?",
+    question: "What is one-third of one-quarter of one-fifth of one-half of 120?",
     answer:'D',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:true,
     category:'logic',
     type:'MC',
@@ -447,8 +480,11 @@ const logicType = [
     id: nanoid(),
     title: "Question TwentyFour",
     correct:false,
-    description: "Jessica earns $750 a week. If she pays $260 in weekly expenses, how much does she have left over at the end of 4 weeks?",
+    question: "Jessica earns $750 a week. If she pays $260 in weekly expenses, how much does she have left over at the end of 4 weeks?",
     answer:'B',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:true,
     category:'logic',
     type:'MC',
@@ -463,8 +499,11 @@ const logicType = [
     id: nanoid(),
     title: "Question TwentyFive",
     correct:false,
-    description: "If a car had increased its average speed for a 210-mile journey by 5 mph, the journey would have been completed in one hour less. What was the original speed of the car for the journey?",
+    question: "If a car had increased its average speed for a 210-mile journey by 5 mph, the journey would have been completed in one hour less. What was the original speed of the car for the journey?",
     answer:'C',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:true,
     category:'logic',
     type:'MC',
@@ -480,8 +519,11 @@ const logicType = [
     id: nanoid(),
     title: "Question FourtySix",
     correct:false,
-    description: "Bob received 5.41 in change from the store. If he received six coins, three of the coins had to be:",
+    question: "Bob received 5.41 in change from the store. If he received six coins, three of the coins had to be:",
     answer:'D',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:true,
     category:'logic',
     type:'MC',
@@ -497,8 +539,11 @@ const logicType = [
     id: nanoid(),
     title: "Question FourtySeven",
     correct:false,
-    description: "Andrew placed thirteenth highest and thirteenth lowest in a competition. How many people were in the competition?",
+    question: "Andrew placed thirteenth highest and thirteenth lowest in a competition. How many people were in the competition?",
     answer:'A',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:true,
     category:'logic',
     type:'MC',
@@ -513,8 +558,11 @@ const logicType = [
     id: nanoid(),
     title: "Question FourtyEight",
     correct:false,
-    description: "CAACCAC is to 3113313 as CACAACAC is to:",
+    question: "CAACCAC is to 3113313 as CACAACAC is to:",
     answer:'D',
+    questionPhoto:{
+      id:nanoid(), value:null
+    },
     word:true,
     category:'logic',
     type:'MC',
@@ -532,8 +580,11 @@ const linguisticType = [
         id: nanoid(),
         title: "Question TwentySix",
         correct:false,
-        description: "What is the longest English word that can be produced using the following letters? IFTWENPAML",
+        question: "What is the longest English word that can be produced using the following letters? IFTWENPAML",
         answer:'filament',
+        questionPhoto:{
+          id:nanoid(), value:null
+        },
         word:false,
         category:'linguistic',
         type:'FIB'
@@ -542,8 +593,11 @@ const linguisticType = [
       id: nanoid(),
       title: "Question TwentySeven",
       correct:false,
-      description: "Which two of the following words have the most similar meaning?",
+      question: "Which two of the following words have the most similar meaning?",
       answer:'D',
+      questionPhoto:{
+        id:nanoid(), value:null
+      },
       word:true,
       category:'linguistic',
       type:'MC',
@@ -558,8 +612,11 @@ const linguisticType = [
       id: nanoid(),
       title: "Question TwentyEight",
       correct:false,
-      description: "What is a papillion?",
+      question: "What is a papillion?",
       answer:'D',
+      questionPhoto:{
+        id:nanoid(), value:null
+      },
       word:true,
       category:'linguistic',
       type:'MC',
@@ -575,7 +632,10 @@ const linguisticType = [
       title: "Question TwentyNine",
       correct:false,
       category:'linguistic',
-      description: "Which is the odd one out?",
+      questionPhoto:{
+        id:nanoid(), value:null
+      },
+      question: "Which is the odd one out?",
       answer:'B',
       word:true,
       type:'MC',
@@ -591,8 +651,11 @@ const linguisticType = [
       title: "Question Thirty",
       correct:false,
       category:'linguistic',
-      description: "Which of the following options is closest in meaning to the word BRUNT",
+      question: "Which of the following options is closest in meaning to the word BRUNT",
       answer:'C',
+      questionPhoto:{
+        id:nanoid(), value:null
+      },
       word:true,
       type:'MC',
       options: [
@@ -607,8 +670,11 @@ const linguisticType = [
       title: "Question ThirtyOne",
       correct:false,
       category:'linguistic',
-      description: "Which is the odd one out?",
+      question: "Which is the odd one out?",
       answer:'D',
+      questionPhoto:{
+        id:nanoid(), value:null
+      },
       word:true,
       type:'MC',
       options: [
@@ -623,8 +689,11 @@ const linguisticType = [
       title: "Question ThirtyTwo",
       correct:false,
       category:'linguistic',
-      description: "able, rot, son, king------Which word shares a common feature with these words?",
+      question: "able, rot, son, king------Which word shares a common feature with these words?",
       answer:'D',
+      questionPhoto:{
+        id:nanoid(), value:null
+      },
       word:true,
       type:'MC',
       options: [
@@ -638,9 +707,12 @@ const linguisticType = [
       id: nanoid(),
       title: "Question ThirtyThree",
       correct:false,
-      description: "MTD is to PXB as FRJ is to?",
+      question: "MTD is to PXB as FRJ is to?",
       category:'linguistic',
       answer:'IVH',
+      questionPhoto:{
+        id:nanoid(), value:null
+      },
       word:false,
       type:'FIB',
     },
@@ -649,8 +721,11 @@ const linguisticType = [
         title: "Question ThirtyFour",
         category:'linguistic',
         correct:false,
-        description: "Bizarre is to outlandish as eccentric is to",
+        question: "Bizarre is to outlandish as eccentric is to",
         answer:'B',
+        questionPhoto:{
+          id:nanoid(), value:null
+        },
         word:true,
         type:'MC',
         options: [
@@ -665,8 +740,11 @@ const linguisticType = [
         title: "Question ThirtyFive",
         correct:false,
         category:'linguistic',
-        description: "Which word below is closest in meaning to monitor?",
+        question: "Which word below is closest in meaning to monitor?",
         answer:'D',
+        questionPhoto:{
+          id:nanoid(), value:null
+        },
         word:true,
         type:'MC',
         options: [
@@ -680,8 +758,11 @@ const linguisticType = [
         id: nanoid(),
         title: "Question ThirtySix",
         correct:false,
-        description: "Which of the following words is the odd one out?",
+        question: "Which of the following words is the odd one out?",
         answer:'B',
+        questionPhoto:{
+          id:nanoid(), value:null
+        },
         word:true,
         category:'linguistic',
         type:'MC',
@@ -696,8 +777,11 @@ const linguisticType = [
         id: nanoid(),
         title: "Question ThirtySeven",
         correct:false,
-        description: "emancipate is to slavery as liberate is to:",
+        question: "emancipate is to slavery as liberate is to:",
         answer:'B',
+        questionPhoto:{
+          id:nanoid(), value:null
+        },
         word:true,
         category:'linguistic',
         type:'MC',
@@ -712,8 +796,11 @@ const linguisticType = [
         id: nanoid(),
         title: "Question ThirtyEight",
         correct:false,
-        description: "Which is the odd one out?",
+        question: "Which is the odd one out?",
         answer:'C',
+        questionPhoto:{
+          id:nanoid(), value:null
+        },
         word:true,
         category:'linguistic',
         type:'MC',
@@ -728,7 +815,10 @@ const linguisticType = [
       title: "Question ThirtyNine",
       correct:false,
       category:'linguistic',
-      description: "abyss is to chasm as fissure is to:",
+      questionPhoto:{
+        id:nanoid(), value:null
+      },
+      question: "abyss is to chasm as fissure is to:",
       answer:'A',
       word:true,
       type:'MC',
@@ -744,8 +834,11 @@ const linguisticType = [
       title: "Question Fourty",
       correct:false,
       category:'linguistic',
-      description: "Milk is to glass as letter is to...?",
+      question: "Milk is to glass as letter is to...?",
       answer:'A',
+      questionPhoto:{
+        id:nanoid(), value:null
+      },
       word:true,
       type:'MC',
       options: [
@@ -761,8 +854,11 @@ const linguisticType = [
       title: "Question FourtyOne",
       correct:false,
       category:'linguistic',
-      description: "Live is to Evil as 5189 is to what",
+      question: "Live is to Evil as 5189 is to what",
       answer:'9815',
+      questionPhoto:{
+        id:nanoid(), value:null
+      },
       type:'FIB',
       word:false,
     }

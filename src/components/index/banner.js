@@ -1,11 +1,16 @@
-import React from "react";
+import React, {useContext} from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 import styled from "styled-components";
 // components
 import { Button } from "../button/button";
+//context - just the dispatch is needed to trigger first render of questions
+import {QuestionsDispatchContext} from '../../context/GlobalContextProvider'
 
 const BG = () => {
+  const dispatch=useContext(QuestionsDispatchContext)
+  // this is the old depracated gatsby-image technique
+  //using fluid and fixed is now depracated
   const data = useStaticQuery(graphql`
     query Images {
       image: file(relativePath: { eq: "mainbrain.jpg" }) {
@@ -20,7 +25,6 @@ const BG = () => {
       }
     }
   `);
-
   const imageData = data.image.childImageSharp.fluid;
   return (
     <>
@@ -37,7 +41,7 @@ const BG = () => {
             <hr className='banner-container-hr'  />
             Professionally built.
           </p>
-          <Button text='Start Test!' page='test' size="large" color="pink" />   
+          <Button onClick={()=>dispatch({type:'NEXT_QUESTION'})} text='Start Test!' page='test' size="large" color="pink" />   
         </div>
       </BackgroundImage>
     </>

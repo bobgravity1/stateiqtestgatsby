@@ -31,7 +31,7 @@ const Layout = ({ children}) => {
   return (
     <>
       <Navbar siteTitle={data.site.siteMetadata.title} />
-      <div className={`${active&&'body-active'}`}>
+      <div id={`${active&&'body-active'}`}>
       {/* <div className={`${active&&'body-active'}`}> */}
         {children}
       </div>  

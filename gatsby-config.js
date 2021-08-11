@@ -5,7 +5,7 @@ module.exports = {
     siteUrl: "https://www.stateiqtest.org",
     title: "StateIQTest - State of the Art IQ Test",
     author: "Robert O'Toole, Andrew O'Toole",
-    image:"/header-meta-icon.svg",
+    image:"/logo.svg",
     url: "https://www.stateiqtest.org",
     description:"good iq test"
   },
@@ -35,11 +35,25 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `StateIQTest - State of the Art IQ Test`,
+        short_name: `StateIQTest`,
+        start_url: `/`,
+        background_color: `#FFF`,
+        theme_color: `#FFF`,
+        display: `minimal-ui`,
+        icon: `src/images/header-meta-icon.svg`, // This path is relative to the root of the site.
+      },
+    }
   ],
+
 };
 
 

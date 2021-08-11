@@ -10,34 +10,23 @@
     list-style-type: none;
     box-sizing: border-box;
   }
-
   body {
     font-weight: normal;
   }
-
   .title{  
     font-family:$secondary-font;
   }
-
   .text{
     letter-spacing: .05rem;
      font-family:$primary-font; 
   }
-
-  // state
+// state
 //active-inactive nav bar
-.body-active{
-  transition:all ease-in .2s;
-  background-color: rgba(0,0,0,.4);
-  filter: blur(.8px);
+#body-active{
+  transition:all ease-out .15s;
+  background-color: rgba(0,0,0,.5);
+  filter: blur(.4px);
 }
-
-  @media(max-width:600px){
- 
-  }
-  
-
-
 //   color classes
 
 

@@ -3,13 +3,17 @@ import {deckShuffled} from '../questions/questionList'
 let deck=deckShuffled
 export const deckInitialState={
     deck,
-    correct:[]
+    correct:{
+        spatial:[],
+        logic:[],
+        reason:[]
+    },
+    question:deck.splice(-1,1),
 }
 
 const questionsReducer=(state, action)=>{
     switch(action.type){
         case 'NEXT_QUESTION':
-            console.log(state);
             return {
             ...state,
             // we use concat instead of push because push
@@ -17,8 +21,6 @@ const questionsReducer=(state, action)=>{
             //the mutated array. (splice vs. slice, foreach vs. map)
             question:state.deck.splice(-1,1),
         }
-        default:
-            return state;
 }
 }
 export default questionsReducer;
