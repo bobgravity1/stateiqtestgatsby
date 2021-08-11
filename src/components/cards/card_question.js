@@ -8,7 +8,6 @@ import {QuestionsStateContext} from '../../context/GlobalContextProvider'
 import {data} from '../gatsby-image/questionImage'
 
 const Card_Question = ({data}) => {
-  console.log(data)
   // const image = data?.avatar?.childImageSharp?.gatsbyImageData?????? syntax????
   const state=useContext(QuestionsStateContext)
   let question=state.question[0]
@@ -26,11 +25,10 @@ const Card_Question = ({data}) => {
                 {/* here we are filtering through the nodes */}
                 {data.allFile.edges.map((item, index) => {
                   console.log(item.node.name)
-        if(question.questionPhoto.value===item.node.name){
-          return <GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt="" />
-        }
-      })}
-                <StaticImage src={`../../images/questions/${photoSrc}`}></StaticImage>
+                if(question.questionPhoto.value===item.node.name){
+                  return <GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt="" />
+                }
+                })}
            </div> 
         </div>
         </>

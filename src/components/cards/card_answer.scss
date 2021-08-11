@@ -1,7 +1,7 @@
 .cardanswer{
     margin:0 auto;
     background-color: white;
-    width:90vw;
+    width:95vw;
     border-radius: 8px;
     min-height:20vh;
     padding:0rem;
@@ -38,6 +38,40 @@
     h1{
         color:white;
         font-size:1.2rem;
+    }
+    ul{
+        display:flex;
+        justify-content: center;
+        div{
+            display:flex;
+            max-width: 12rem;
+            flex-direction: column;
+            align-items: center;
+        }
+        label{
+            margin-top: .6rem;
+            font-weight: 600;
+            min-width:2rem;
+            text-align: center;
+            font-family: $primary-font;
+            font-size:.8rem;
+            border:none;
+            color:black;
+            border-radius: 5px;
+        }
+    }
+    li{
+        color:white;
+        box-shadow: $shadow-inverse;
+        background-color: $secondary-color-hover;
+        border:none;
+        font-size: 1.4rem;
+        border-radius: 10px;
+        margin: 0rem 1rem;
+        padding: .5rem .8rem;
+    }
+    section{
+        padding-bottom: 1rem;
     }
 }
 
