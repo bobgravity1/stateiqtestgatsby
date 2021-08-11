@@ -3,16 +3,21 @@
     background-color: white;
     width:95vw;
     border-radius: 8px;
-    min-height:30vh;
+    min-height:10vh;
     padding:0rem;
     box-shadow: $shadow-light;
     font-family: $primary-font;
     &-container{
         display:flex;
         flex-direction: column;
-        align-items: center;      
+        align-items: center;  
+    }
+    &-image{
+        margin-bottom: 2rem;
+        margin-top:1rem;
     }
     p{
+        margin-top: .2rem;
         padding-top: .5rem;
         font-weight:600;
         padding:0rem 1rem
@@ -23,7 +28,7 @@
         padding-left: 1rem;
         box-shadow: $shadow-light;
         display:flex;
-        margin-bottom: 2rem;
+        margin-bottom:2rem;
         padding:.5rem 0rem;
         padding-left: 1rem;
         border-top-left-radius: 8px;

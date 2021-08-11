@@ -20,29 +20,27 @@ const Card_Answer = ({data}) => {
                 <div className="cardanswer-text">
                     <h1>Answer</h1>          
                 </div>     
-           </div>
-           <div className="cardanswer-image">
-                     {/* here we are filtering through the nodes */}
+           </div>         
+        {/* IMAGE */}
+{/* here we are filtering through the nodes */}
           {question.answerPhoto&&data.allFile.edges.map((item, index) => {
                   console.log(item.node.name)
                 if(question.answerPhoto.value===item.node.name){
-                  return <GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt="" />
+                  return  <div className="cardanswer-image"><GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt="" /></div>
                 }
                 })} 
-            </div>
-        <section>
            <ul>
            {question.options&&question.options.map(option=>(
+                <section>
                <div>
                <li>{option.value}</li>
                {option.word&&<label>{option.word}</label>}
                </div>
+               </section>
            ))}
-           </ul>
-        </section>
-        <section>
+           </ul>      
         {/* PUT THE LOGIC HERE FOR FIB */}
-        </section>
+      {/* <section>  </section> */}
         </div>
         </>
     )

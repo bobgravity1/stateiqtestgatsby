@@ -22,13 +22,16 @@ const Card_Question = ({data}) => {
                     <h1>Question 23 ({question.title})</h1>                   
                 </div>
                 <p>{question.question}</p> 
-                {/* here we are filtering through the nodes */}
+                <div className="cardquestion-image">
+{/* IMAGE */}
+{/* here we are filtering through the nodes */}
                 {data.allFile.edges.map((item, index) => {
                   console.log(item.node.name)
                 if(question.questionPhoto.value===item.node.name){
                   return <GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt="" />
                 }
                 })}
+                </div>
            </div> 
         </div>
         </>
