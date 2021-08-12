@@ -2,6 +2,7 @@ import React from 'react'
 
 const AnswerInput = ({text}) => {
     return (
+        <form action="/form/submit" method="get" autocomplete="off">
         <div className="answerInput">
         <div className='form'>
             <input placeholder=" " name='name' autocomplete='off' />
@@ -10,6 +11,7 @@ const AnswerInput = ({text}) => {
             </label>
         </div>
         </div>
+        </form>
     )
 }
 
