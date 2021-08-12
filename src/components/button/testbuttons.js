@@ -11,7 +11,7 @@ const Test_Buttons = () => {
     const dispatch=useContext(QuestionsDispatchContext)
     return (
         <div className='testbuttons'>
-            <Link to='/' exact><button className='blue xlarge testbuttons-button'>Home</button></Link>
+            <Link to='/' exact><button className='blue xlarge testbuttons-button'>Back</button></Link>
             <button onClick={()=>{dispatch({type:'NEXT_QUESTION'}); scroll()}}  className='pink xlarge testbuttons-button'>Submit</button>
         </div>
     )

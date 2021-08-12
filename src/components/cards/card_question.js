@@ -8,12 +8,10 @@ import {QuestionsStateContext} from '../../context/GlobalContextProvider'
 import {data} from '../gatsby-image/questionImage'
 
 const Card_Question = ({data}) => {
-  // const image = data?.avatar?.childImageSharp?.gatsbyImageData?????? syntax????
+  // const image = data?.avatar?.childImageSharp?.gatsbyImageData (syntax)
   const state=useContext(QuestionsStateContext)
   let question=state.question[0]
   let photoSrc=question.questionPhoto.value;
-
-// const data = graphql`
     return (
         <>
         <div className='cardquestion'>
@@ -23,14 +21,13 @@ const Card_Question = ({data}) => {
                 </div>
                 <p>{question.question}</p> 
                 <div className="cardquestion-image">
-{/* IMAGE */}
-{/* here we are filtering through the nodes */}
-                {data.allFile.edges.map((item, index) => {
-                  console.log(item.node.name)
-                if(question.questionPhoto.value===item.node.name){
-                  return <GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt="" />
-                }
-                })}
+                {/* IMAGE */}
+    {/* here we are filtering through the nodes */}
+                  {data.allFile.edges.map((item, index) => {
+                  if(question.questionPhoto.value===item.node.name){
+                    return <GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt="" />
+                  }
+                  })}
                 </div>
            </div> 
         </div>

@@ -58,7 +58,7 @@ const spatialType = [
     question: "How many circles contain a pink dot?",
     answer:'12',
     category:'spatial',
-    type:'FIBphoto',
+    type:'FIB',
     word:false,
     questionPhoto:{
       id:nanoid(), value:'spatialThree'
@@ -221,7 +221,7 @@ const spatialType = [
       question: "How many DIFFERENTLY sized circles are shown in this image?",
       answer:'6',
       category:'spatial',
-      type:'FIBphoto',
+      type:'FIB',
       word:false,
       questionPhoto:{
         id:nanoid(), value:'spatialTwelve'

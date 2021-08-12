@@ -12,17 +12,17 @@ import {QuestionsStateContext} from '../../context/GlobalContextProvider'
 const Card_Answer = ({data}) => {
   const state=useContext(QuestionsStateContext)
  let question=state.question[0];
- console.log(question.options)
+ console.log(question.type)
     return (
         <>
-        <div className='cardanswer'>
+    <div className='cardanswer'>
            <div className="cardanswer-container">
                 <div className="cardanswer-text">
                     <h1>Answer</h1>          
                 </div>     
            </div>         
-        {/* IMAGE */}
-{/* here we are filtering through the nodes */}
+                {/* IMAGE */}
+    {/* here we are filtering through the nodes */}
           {question.answerPhoto&&data.allFile.edges.map((item, index) => {
                   console.log(item.node.name)
                 if(question.answerPhoto.value===item.node.name){
@@ -30,18 +30,25 @@ const Card_Answer = ({data}) => {
                 }
                 })} 
            <ul>
+    {/* MC OPTIONS */}    
            {question.options&&question.options.map(option=>(
-                <section>
-               <div>
-               <li>{option.value}</li>
-               {option.word&&<label>{option.word}</label>}
-               </div>
-               </section>
-           ))}
+            <section>
+                <div>
+                    <li>{option.value}</li>
+                    {option.word&&<label>{option.word}</label>}
+                </div>
+            </section>
+               ))}
            </ul>      
-        {/* PUT THE LOGIC HERE FOR FIB */}
-      {/* <section>  </section> */}
-        </div>
+    {/* FIB INPUT PANEL GOES HERE! */}
+            {question.type==='FIB'&&
+                <div className='form'>
+                    <input type='text' placeholder=" " name='name' autocomplete='off' />
+                    <label for='name' className='label-name'>
+                        <span className='cardanswer-contentname'>Type Answer Here</span>
+                    </label>
+                </div>}
+    </div>
         </>
     )
 }
