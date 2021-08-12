@@ -45,7 +45,7 @@ const Card_Answer = ({data}) => {
                 <div className='form'>
                     <input type='text' placeholder=" " name='name' autocomplete='off' />
                     <label for='name' className='label-name'>
-                        <span className='cardanswer-contentname'>Type Answer Here</span>
+                        <span className='cardanswer-contentname'>Type Answer Here:</span>
                     </label>
                 </div>}
     </div>
