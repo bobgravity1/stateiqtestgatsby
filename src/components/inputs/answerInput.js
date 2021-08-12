@@ -4,7 +4,7 @@ const AnswerInput = ({text}) => {
     return (
         <div className="answerInput">
         <div className='form'>
-            <input type='text' placeholder=" " name='name' autocomplete='off' />
+            <input placeholder=" " name='name' autocomplete='off' />
             <label for='name' className='label-name'>
                 <span className='answerInput-contentname'>{text}</span>
             </label>
