@@ -8,7 +8,7 @@ import {deckInitialState} from '../reducers/questionsReducer'
 //navbar state context
 export const ActiveNavStateContext=createContext()
 export const ActiveNavDispatchContext=createContext()
-//question shufflex deck state context
+//question shuffled deck state context (questions, score, etc)
 export const QuestionsStateContext=createContext()
 export const QuestionsDispatchContext=createContext()
 

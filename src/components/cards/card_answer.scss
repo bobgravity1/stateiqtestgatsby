@@ -42,7 +42,8 @@
     input{
         font-family: $primary-font;
         display:flex;
-        font-size: 1.2rem !important; 
+        font-size: 1rem !important; 
+       
         margin: 0 auto;
         padding-top:1rem;
         border:none;
@@ -56,8 +57,8 @@
         &:focus + .label-name .cardanswer-contentname, 
         &:not(:placeholder-shown) + .label-name .cardanswer-contentname{
             transform:translateY(-120%);
-            font-size: .9rem;
-            color:$primary-color-hover;
+            font-size: .8rem;
+            color:$secondary-color;
         }
         &:focus + .label-name::after, 
         .form input:valid + .label-name::after{
@@ -75,7 +76,7 @@
         label{
             padding: .3rem;
             pointer-events: none;
-            position:absolute;
+            position:absolute;         
             bottom: 0px;
             font-size: .8rem;
             left:0%;

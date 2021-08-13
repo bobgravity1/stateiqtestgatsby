@@ -8,6 +8,8 @@ export const deckInitialState={
         logic:[],
         reason:[]
     },
+    score:70,
+    answer:'',
     question:deck.splice(-1,1),
 }
 
@@ -21,6 +23,18 @@ const questionsReducer=(state, action)=>{
             //the mutated array. (splice vs. slice, foreach vs. map)
             question:state.deck.splice(-1,1),
         }
+        case 'CURRENT_ANSWER':
+            console.log(state.answer)
+            return {
+                ...state, 
+                answer:action.payload.answer
+            } 
+        case 'SUBMIT_ANSWER':
+            console.log(state.score)
+            return {
+                ...state, 
+                score:state.score+3
+            } 
 }
 }
 export default questionsReducer;

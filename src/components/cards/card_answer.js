@@ -5,12 +5,13 @@ import Img from "gatsby-image"
 // imported gatsby query for dynamic paths
 import QuestionImage from '../gatsby-image/questionImage'
 import {Button} from '../button/button'
-//context- just the state is needed. the dispatch is 
-// called in the testbutton component
+//context
 import {QuestionsStateContext} from '../../context/GlobalContextProvider'
-
+import {QuestionsDispatchContext} from '../../context/GlobalContextProvider'
+//
 const Card_Answer = ({data}) => {
   const state=useContext(QuestionsStateContext)
+  const dispatch=useContext(QuestionsDispatchContext)
  let question=state.question[0];
  console.log(question.type)
     return (
@@ -24,7 +25,6 @@ const Card_Answer = ({data}) => {
                 {/* IMAGE */}
     {/* here we are filtering through the nodes */}
           {question.answerPhoto&&data.allFile.edges.map((item, index) => {
-                  console.log(item.node.name)
                 if(question.answerPhoto.value===item.node.name){
                   return  <div className="cardanswer-image"><GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt="" /></div>
                 }
@@ -43,7 +43,7 @@ const Card_Answer = ({data}) => {
     {/* FIB INPUT PANEL GOES HERE! */}
             {question.type==='FIB'&&
                 <div className='form'>
-                    <input type='text' placeholder=" " name='name' autocomplete='off' />
+                    <input onChange={e=>dispatch({type:'CURRENT_ANSWER', payload: {answer: e.target.value}})} type='text' placeholder=" " name='name' autocomplete='off' />
                     <label for='name' className='label-name'>
                         <span className='cardanswer-contentname'>Type Answer Here:</span>
                     </label>
