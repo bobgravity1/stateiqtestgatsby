@@ -22,19 +22,25 @@ const questionsReducer=(state, action)=>{
             //returns the length of the new array. we need to return
             //the mutated array. (splice vs. slice, foreach vs. map)
             question:state.deck.splice(-1,1),
+            answer:''
         }
         case 'CURRENT_ANSWER':
-            console.log(state.answer)
             return {
                 ...state, 
                 answer:action.payload.answer
             } 
         case 'SUBMIT_ANSWER':
-            console.log(state.score)
-            return {
-                ...state, 
-                score:state.score+3
-            } 
+            if(action.payload.answer===state.question[0].answer){
+                return {
+                    ...state, 
+                    score:state.score+3
+                } 
+            }
+            else{
+                return{
+                    ...state
+                }
+            }    
 }
 }
 export default questionsReducer;

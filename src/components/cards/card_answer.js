@@ -13,7 +13,6 @@ const Card_Answer = ({data}) => {
   const state=useContext(QuestionsStateContext)
   const dispatch=useContext(QuestionsDispatchContext)
  let question=state.question[0];
- console.log(question.type)
     return (
         <>
     <div className='cardanswer'>
@@ -34,7 +33,7 @@ const Card_Answer = ({data}) => {
            {question.options&&question.options.map(option=>(
             <section>
                 <div>
-                    <li>{option.value}</li>
+                    <li onClick={e=>dispatch({type:'CURRENT_ANSWER', payload: {answer: option.value}})}>{option.value}</li>
                     {option.word&&<label>{option.word}</label>}
                 </div>
             </section>
