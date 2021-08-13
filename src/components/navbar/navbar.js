@@ -4,17 +4,21 @@ import logo from '../../images/logo.svg'
 // context
 import {ActiveNavStateContext} from '../../context/GlobalContextProvider'
 import {ActiveNavDispatchContext} from '../../context/GlobalContextProvider'
-
+import {QuestionsDispatchContext} from '../../context/GlobalContextProvider'
+import {initialState} from '../../reducers/activeNavReducer'
 const Navbar = (props) => {
 const {active}=useContext(ActiveNavStateContext);
 const dispatch=useContext(ActiveNavDispatchContext);
+const dispatchTwo=useContext(QuestionsDispatchContext);
     return (
     <>
     <div className='plz body'>   
         <nav className={`${active&&'active'}`}>
-            <div className='logo'>
+            <Link to='/'>
+                <div onClick={()=>dispatchTwo({type:'INIT_STATE', payload:initialState})} className='logo'>
                 <img style={{height:'auto', margin:'1vh 0vw'}} src={logo} alt='iqtestlogo' />
             </div>
+            </Link>
             <ul className={`${active&&'nav-active'} nav-links`}>
             <div>
                 <Link style={{ textDecoration:'none'}} to="/"><li>Why Our IQ Test</li></Link>

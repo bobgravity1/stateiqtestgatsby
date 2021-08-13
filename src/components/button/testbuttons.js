@@ -11,6 +11,7 @@ const Test_Buttons = () => {
         dispatch({type:'SUBMIT_ANSWER', payload:{answer: answer}})
         dispatch({type:'NEXT_QUESTION'})
         window.scrollTo(0,0)
+        console.log(state)
         }
     const dispatch=useContext(QuestionsDispatchContext)
     const state=useContext(QuestionsStateContext)

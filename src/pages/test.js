@@ -16,7 +16,6 @@ import {QuestionsDispatchContext} from '../context/GlobalContextProvider'
 //navbar-context
 import {ActiveNavStateContext} from '../context/GlobalContextProvider'
 
-
 const Test = ({data}) => {
   const {active}=useContext(ActiveNavStateContext);
   const {deck}=useContext(QuestionsStateContext)

@@ -3,8 +3,8 @@ import React, {createContext, useReducer} from 'react'
 import activeNavReducer from '../reducers/activeNavReducer'
 import {initialState} from '../reducers/activeNavReducer'
 // questions state//reducer
-import questionsReducer from '../reducers/questionsReducer'
-import {deckInitialState} from '../reducers/questionsReducer'
+import questionsReducer from '../reducers/testReducer'
+import {deckInitialState} from '../reducers/testReducer'
 //navbar state context
 export const ActiveNavStateContext=createContext()
 export const ActiveNavDispatchContext=createContext()

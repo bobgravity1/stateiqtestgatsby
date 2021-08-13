@@ -3,18 +3,22 @@ import {deckShuffled} from '../questions/questionList'
 let deck=deckShuffled
 export const deckInitialState={
     deck,
-    correct:{
-        spatial:[],
-        logic:[],
-        reason:[]
-    },
+    correct:[],
     score:70,
     answer:'',
     question:deck.splice(-1,1),
 }
 
-const questionsReducer=(state, action)=>{
+const testReducer=(state, action)=>{
     switch(action.type){
+        case 'INIT_STATE':
+            return {
+            deck,
+            correct:[],
+            score:70,
+            answer:'',
+            question:deck.splice(-1,1),
+                }
         case 'NEXT_QUESTION':
             return {
             ...state,
@@ -32,15 +36,18 @@ const questionsReducer=(state, action)=>{
         case 'SUBMIT_ANSWER':
             if(action.payload.answer===state.question[0].answer){
                 return {
-                    ...state, 
-                    score:state.score+3
+                    ...state,
+                    score:state.score+3,
+                    correct:state.correct.concat(state.question)
                 } 
             }
             else{
                 return{
                     ...state
                 }
-            }    
+            }  
 }
+
+    
 }
-export default questionsReducer;
+export default testReducer;

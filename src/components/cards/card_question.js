@@ -13,7 +13,7 @@ const Card_Question = ({data}) => {
   let question=state.question[0]
   let photoSrc=question.questionPhoto.value;
   useEffect(()=>{
-  
+  console.log(state)
   })
     return (
         <>

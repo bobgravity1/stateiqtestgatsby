@@ -12,7 +12,7 @@ import {QuestionsDispatchContext} from '../../context/GlobalContextProvider'
 const Card_Answer = ({data}) => {
   const state=useContext(QuestionsStateContext)
   const dispatch=useContext(QuestionsDispatchContext)
- let question=state.question[0];
+  let question=state.question[0];
     return (
         <>
     <div className='cardanswer'>
@@ -42,7 +42,7 @@ const Card_Answer = ({data}) => {
     {/* FIB INPUT PANEL GOES HERE! */}
             {question.type==='FIB'&&
                 <div className='form'>
-                    <input onChange={e=>dispatch({type:'CURRENT_ANSWER', payload: {answer: e.target.value}})} type='text' placeholder=" " name='name' autocomplete='off' />
+                    <input onChange={e=>dispatch({type:'CURRENT_ANSWER', payload: {answer: e.target.value.toLowerCase()}})} type='text' placeholder=" " name='name' autocomplete='off' />
                     <label for='name' className='label-name'>
                         <span className='cardanswer-contentname'>Type Answer Here:</span>
                     </label>
