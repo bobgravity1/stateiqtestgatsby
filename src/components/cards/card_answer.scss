@@ -132,14 +132,15 @@
     li{
         cursor: pointer;
         font-size: 1.4rem;
-        transition: all .15s ease-in;
+        transition: all .1s;
         color:white;
         // box-shadow: $shadow-inverse;
         border:none;
         font-weight: 600;
         border-radius: 10px;
         margin: 0rem .9rem;
-        padding: .5rem .8rem;
+        padding: .4rem .8rem;
+        &:focus { outline:none !important;}
     }
     section{
         padding-bottom: 1.5rem;
