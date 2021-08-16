@@ -1,4 +1,4 @@
-import React, {useEffect, useContext} from 'react'
+import React, {useEffect, useState, useContext} from 'react'
 import {useStaticQuery, graphql} from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Img from "gatsby-image"
@@ -10,9 +10,21 @@ import {QuestionsStateContext} from '../../context/GlobalContextProvider'
 import {QuestionsDispatchContext} from '../../context/GlobalContextProvider'
 //
 const Card_Answer = ({data}) => {
+  const [active, setActive]=useState({active:false, index:null})
   const state=useContext(QuestionsStateContext)
   const dispatch=useContext(QuestionsDispatchContext)
   let question=state.question[0];
+  useEffect(()=>{
+    setActive({active:false, index:null})
+  },[state.question[0]])
+
+  const optionSelect=(option, index)=>{ 
+    dispatch({type:'CURRENT_ANSWER', payload: {answer: option}})
+    // here we are assigning an index and active state to toggle
+    // each question option (a,c,b,d, etc.)
+    setActive({active:!active.active, index:index})  
+  }
+
     return (
         <>
     <div className='cardanswer'>
@@ -30,20 +42,21 @@ const Card_Answer = ({data}) => {
                 })} 
            <ul>
     {/* MC OPTIONS */}    
-           {question.options&&question.options.map(option=>(
+           {question.options&&question.options.map((option, index)=>(     
             <section>
                 <div>
-                    <li onClick={e=>dispatch({type:'CURRENT_ANSWER', payload: {answer: option.value}})}>{option.value}</li>
+                    <li className={`${index===active.index?`cardanswer-option-active`:'cardanswer-option-inactive'}`} onClick={()=>optionSelect(option.value, index)}>{option.value}</li>
                     {option.word&&<label>{option.word}</label>}
                 </div>
             </section>
                ))}
            </ul>      
+           <span className='score'>{state.score}</span>
     {/* FIB INPUT PANEL GOES HERE! */}
             {question.type==='FIB'&&
                 <div className='form'>
                     <input onChange={e=>dispatch({type:'CURRENT_ANSWER', payload: {answer: e.target.value.toLowerCase()}})} type='text' placeholder=" " name='name' autocomplete='off' />
-                    <label for='name' className='label-name'>
+                    <label onClick={e=>optionSelect(e.target.value)} for='name' className='label-name'>
                         <span className='cardanswer-contentname'>Type Answer Here:</span>
                     </label>
                 </div>}

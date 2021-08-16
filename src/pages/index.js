@@ -22,12 +22,10 @@ const IndexPage = () => {
   const dispatch=useContext(QuestionsDispatchContext)
   const state=useContext(QuestionsStateContext)
   useEffect(() => {
-    console.log(state)
     if (typeof window !== `undefined`) {
       window.scrollTo(0, 0);
     }
   },[])
-  
   return (
     <>
     <Layout>

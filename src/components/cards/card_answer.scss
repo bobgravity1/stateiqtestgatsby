@@ -1,4 +1,14 @@
-.cardanswer{
+.cardanswer-option-active{
+    font-size: 1.4rem;
+    background-color: $secondary-color-hover;
+}
+.cardanswer-option-inactive{
+    font-size: 1.4rem;
+    background-color: $secondary-color;
+}
+
+
+.cardanswer{   
     margin:0 auto;
     background-color: white;
     width:95vw; 
@@ -123,9 +133,9 @@
         }
     }
     li{
+        transition: all .2s ease-in;
         color:white;
         // box-shadow: $shadow-inverse;
-        background-color: $secondary-color-hover;
         border:none;
         font-weight: 600;
         font-size: 1.4rem;
@@ -136,7 +146,6 @@
     section{
         padding-bottom: 1.5rem;
     }
-
 }
 
 @media(min-width:768px){

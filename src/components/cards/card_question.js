@@ -12,9 +12,6 @@ const Card_Question = ({data}) => {
   const state=useContext(QuestionsStateContext)
   let question=state.question[0]
   let photoSrc=question.questionPhoto.value;
-  useEffect(()=>{
-  console.log(state)
-  })
     return (
         <>
         <div className='cardquestion'>
@@ -34,7 +31,6 @@ const Card_Question = ({data}) => {
                   })}
                 </div>
            </div> 
-           <span className='score'>{state.score}</span>
         </div>
         </>
     )
