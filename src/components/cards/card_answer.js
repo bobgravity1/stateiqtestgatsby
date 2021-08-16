@@ -60,6 +60,7 @@ const Card_Answer = ({data}) => {
                         <span className='cardanswer-contentname'>Type Answer Here:</span>
                     </label>
                 </div>}
+                <p>{state.score}</p>
     </div>
         </>
     )
