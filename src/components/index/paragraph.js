@@ -12,7 +12,7 @@ const Paragraph = ({header, text}) => {
              </>
              :
              <>
-             <p className='text paragraph-paragraph'>{text[2]}</p> 
+             <p className='x text paragraph-paragraph'>{text[2]}</p> 
              </>
             }           
         </div>
