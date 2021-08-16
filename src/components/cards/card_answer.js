@@ -51,7 +51,7 @@ const Card_Answer = ({data}) => {
             </section>
                ))}
            </ul>      
-           <span className='score'>{state.score}</span>
+       
     {/* FIB INPUT PANEL GOES HERE! */}
             {question.type==='FIB'&&
                 <div className='form'>

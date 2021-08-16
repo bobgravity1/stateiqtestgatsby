@@ -17,7 +17,7 @@ const Test_Buttons = () => {
     }
     return (
         <div className='testbuttons'>
-            <Link to='/' exact><button className='blue xlarge testbuttons-button'>Back</button></Link>
+            <Link to='/' exact><button className='blue xlarge testbuttons-button'>Restart</button></Link>
             <button onClick={()=>answerSubmit(state.answer)}  className='pink xlarge testbuttons-button'>Submit</button>
         </div>
     )

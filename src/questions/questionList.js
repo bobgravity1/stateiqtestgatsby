@@ -63,9 +63,6 @@ const spatialType = [
     questionPhoto:{
       id:nanoid(), value:'spatialThree'
     },
-    options: [
-      {id:nanoid(),value:null}
-    ]
   },
   {
     id: nanoid(),
