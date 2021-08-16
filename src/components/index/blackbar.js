@@ -21,7 +21,7 @@ const Blackbar = ({button}) => {
             <>
             <img style={{height:'auto', marginBottom:'1vh', marginTop:'1.5vh'}} src={logoinverse} alt='iqtestinverselogo'></img>
             <h1 className='title'>{title[1]}</h1> 
-            <p className='title'>"The best test out there."</p>
+            <p className='x title'>"The best test out there."</p>
             </>
         )
           } 
