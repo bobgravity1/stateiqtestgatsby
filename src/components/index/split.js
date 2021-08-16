@@ -21,7 +21,7 @@ const Split = () => {
                 <div className="split-right-image">
                     <img src={logoSix} />
                 </div>
-                <p>Purchase a full score breakdown for 1.99 at the end of the test! Every result and analysis is 100% unique. Just like you! One word though my freinddddddddddddddddddddddd. Deltaaa</p> 
+                <p>Purchase a full score breakdown for 1.99 at the end of the test! Every result and analysis is 100% unique. Just like you!</p> 
         </div>
     </div>
 </>

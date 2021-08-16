@@ -18,20 +18,20 @@
         align-items: center;
         border-radius: 8px;
         p{
-            width:75%;
+            width:95%;
             font-weight: 600;
-            margin:1rem 0rem;
+            margin:1rem 0rem .5rem 0rem;
        }
         h1{
             font-size:1.8rem;    
             width:90%;
-            margin: 2rem 0rem;  
+            margin: 1rem 0rem;  
         }
     }
         &-left{
             color:white;
             background-color: black;
-            margin: 1rem 1.5rem;
+            margin: 1.5rem 1rem 0rem 1rem;
             &-image{             
             background-color: $test-blue;
             height: 20rem; 
@@ -46,7 +46,7 @@
       
         }
         &-right{ 
-            margin: 1.5rem 1.5rem;
+            margin: 1.5rem 1rem;
             background-color: black;
             color:white;
             &-image{
