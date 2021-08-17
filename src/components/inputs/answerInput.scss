@@ -59,3 +59,19 @@
         transition:all .3s ease;
     }
 }
+
+@media(min-width:768px){
+    .answerInput{
+        background-color: red;
+        input{
+        .form{
+            width:50%;
+            height:4.5rem;
+            margin-bottom: 9rem;
+            label{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+}

@@ -49,7 +49,50 @@
     }
     }
 
-@media (min-width:900px){
+    @media (min-width:768px){
+        .footer{    
+            display:flex;
+            padding:0rem 0rem 0rem 1rem;
+            &-logo{
+                height:3rem;
+                margin-top: 2rem;
+            }
+            &-container{
+                margin:0 auto; 
+                margin-right: 20rem;
+            }           
+            ul{
+                letter-spacing: .03rem;
+                display:flex;
+                
+                position:relative;
+                bottom:5rem;
+            }
+            li{
+                width:165%;
+            }
+            section{
+                padding-right:4.4rem;
+            }
+            h1{
+                width:10.2rem;
+            }
+            &-text-desktop{
+                display:block;
+                margin-top:3rem;
+                font-size:1rem;
+                max-width:25.5rem;
+                line-height:2.3rem;
+                padding-bottom:6.2rem;
+            }
+            &-text-mobile{
+                display:none;
+            }
+        } 
+    }
+
+
+@media (min-width:1080px){
     .footer{    
         display:flex;
         padding:0rem 0rem 0rem 1rem;
@@ -60,7 +103,9 @@
         }           
         ul{
             letter-spacing: .03rem;
-            display:flex;          
+            display:flex;    
+            position:static;   
+            margin-top: 2rem;   
         }
         li{
             width:165%;
@@ -87,6 +132,7 @@
             padding-bottom:6.2rem;
         }
         &-logo{
+            margin-top: 2rem;
             margin-bottom: 2rem;
             height:6rem;
             padding-top:2.95rem;  

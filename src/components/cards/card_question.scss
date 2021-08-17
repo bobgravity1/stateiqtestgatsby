@@ -45,15 +45,38 @@
 
 @media(min-width:768px){
     .cardquestion{
-        width:46vw;
-        height:65vh;
+        width:95vw;
+        min-height:10vh;
         margin-top:1.5rem;
         margin-bottom: 1.5rem;
         &-text{
             margin-bottom: 1rem;
         }
+        h1{
+            font-size:2rem;
+        }
+        p{ 
+            margin-left: 1rem;
+            font-size:1.8rem;
+            margin-top: 1rem;
+        }
     }
-    p{
-        margin-top: 2.5rem;
+
+}
+
+@media(min-width:1080px){
+    .cardquestion{
+        width:48.5vw;
+        min-height:30vh;
+        margin-top:1.5rem;
+        margin-bottom: 1.5rem;
+        h1{
+            font-size:1.5rem;
+        }
+        p{
+            font-size:1.6rem;
+            margin-left:.5rem;
+            margin-top: 1.5rem;
+        }
     }
 }

@@ -1,5 +1,4 @@
 import React, {useEffect, useContext} from 'react'
-import {Button} from './button.js'
 import {Link} from 'gatsby'
 // context - just the dispatch it needed to trigger the reducer
 import {QuestionsDispatchContext} from '../../context/GlobalContextProvider'

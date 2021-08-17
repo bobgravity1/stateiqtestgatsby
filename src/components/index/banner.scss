@@ -1,4 +1,3 @@
-
 .banner{ 
     width:100vw;
     z-index:-20;
@@ -48,8 +47,7 @@
         margin-bottom:1.4rem;
         font-weight:500
     }
-    }  
-   
+    }   
 }
 .inverse-logo{
         position: relative;
@@ -59,36 +57,35 @@
     .inverse-logo{
       display:None;
     }
-.banner{
- &-logo{
-     display:none
- }
-    &-bg{
-        background-position:20vw 3.4vh;
-        background-size: 65%;
-        box-shadow: $shadow-light;
-    }   
-    &-container{
-        width:45vw;
-        margin-left: 10vh;
-        height:92vh;
-        &-hr{
-            margin: 1.5vh auto;
-            width: 14vw;
-        }
-    h1{
-
-        font-size:4em;
-        width:50vw;
+    .banner{
+    &-logo{
+        display:none
     }
-    p{
-        width:30vw;
-        font-size:1.6rem
-    }   
-}
-}
-}
+        &-bg{
+            background-position:20vw 3.4vh;
+            background-size: 65%;
+            box-shadow: $shadow-light;
+        }   
+        &-container{
+            width:45vw;
+            margin-left: 10vh;
+            height:92vh;
+            &-hr{
+                margin: 1.5vh auto;
+                width: 14vw;
+            }
+        h1{
 
-.buttonx{
-    z-index:20000;
-}
+            font-size:4em;
+            width:50vw;
+        }
+        p{
+            width:30vw;
+            font-size:1.6rem
+        }   
+    }
+    }
+    }
+    .buttonx{
+        z-index:20000;
+    }

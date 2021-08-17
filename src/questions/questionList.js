@@ -183,10 +183,10 @@ const spatialType = [
         {id:nanoid(),value:'F'}
       ],
       questionPhoto:{
-        id:nanoid(), value:'spatialTen-One'
+        id:nanoid(), value:'spatialTen-one'
       },
       answerPhoto:{
-        id:nanoid(), value:'spatialTen-Two'
+        id:nanoid(), value:'spatialTen-two'
       }
     },
     {
@@ -506,10 +506,10 @@ const logicType = [
     type:'MC',
     options: [
       {id:nanoid(),value:'A', word:'40 MPH'},
-      {id:nanoid(),value:'B', word:'50 MPH'},
+      {id:nanoid(),value:'B', word:'35 MPH'},
       {id:nanoid(),value:'C', word:'30 MPH'},
       {id:nanoid(),value:'D', word:'20 MPH'},
-      {id:nanoid(),value:'D', word:'35 MPH'},
+
     ]
   },
   {
@@ -529,7 +529,6 @@ const logicType = [
       {id:nanoid(),value:'B', word:'Nickles'},
       {id:nanoid(),value:'C', word:'Quarters'},
       {id:nanoid(),value:'D', word:'Dimes'},
-      {id:nanoid(),value:'E', word:'Half-Dollars'},
     ]
   },
   {
@@ -842,7 +841,6 @@ const linguisticType = [
         {id:nanoid(),value:'A', word:'envelope'},
         {id:nanoid(),value:'B', word:'pen'},
         {id:nanoid(),value:'C', word:'stamp'},
-        {id:nanoid(),value:'D', word:'book'},
         {id:nanoid(),value:'D', word:'mail'}
       ]
     },

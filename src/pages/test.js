@@ -23,17 +23,14 @@ const Test = ({data}) => {
   const state=useContext(QuestionsStateContext)
   const {deck}=state
   const [complete, setComplete]=useState(0)
-  
   const testData = [
     { bgcolor: " #EC4899", completed: complete },
   ];
-
   useEffect(() => {
     if (typeof window !== `undefined`) {
       window.scrollTo(0, 0);
     }
     setComplete(prev=>prev+3)
-    console.log(complete)
   },[state.question[0]])
 
   return (

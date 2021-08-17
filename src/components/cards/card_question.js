@@ -18,12 +18,11 @@ const Card_Question = ({data}) => {
            <div className="cardquestion-container">
                 <div className="cardquestion-text">
                     <h1>Question 23 ({question.title})</h1>                   
-                </div>
-                
+                </div>         
                 <p>{question.question}</p> 
                 <div className="cardquestion-image">
                 {/* IMAGE */}
-    {/* here we are filtering through the nodes */}
+  {/* here we are filtering through the nodes */}
                   {data.allFile.edges.map((item, index) => {
                   if(question.questionPhoto.value===item.node.name){
                     return <GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt="" />

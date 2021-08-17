@@ -1,7 +1,6 @@
 p{
   margin-top: -1rem;
 }
-
 .p-container{
   padding: 1rem 0em;
   box-shadow: $shadow-inverse
@@ -9,7 +8,6 @@ p{
 .paragraph{
   border-radius: 12px;
   margin: 0rem 0rem;
- 
   padding:2rem 1.5rem 0rem 1.5rem;
   text-align: left;
     &-header{
@@ -23,7 +21,7 @@ p{
     }
 }
 
-@media(min-width:1000px){
+@media(min-width:1080px){
 .p-container{
   padding: 1rem 0em;
   box-shadow: $shadow-inverse
