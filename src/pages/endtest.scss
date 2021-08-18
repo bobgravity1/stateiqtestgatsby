@@ -23,3 +23,11 @@
         margin-bottom:2rem
     }
 }
+
+@media (min-width:1030px){
+    .endtest{
+        &-container{
+            width:50vw;
+        }
+    }
+}
