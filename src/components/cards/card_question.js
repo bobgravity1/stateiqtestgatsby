@@ -17,7 +17,7 @@ const Card_Question = ({data}) => {
         <div className='cardquestion'>
            <div className="cardquestion-container">
                 <div className="cardquestion-text">
-                    <h1>Question 23 ({question.title})</h1>                   
+                    <h1>Question {state.index} ({question.title})</h1>                   
                 </div>         
                 <p>{question.question}</p> 
                 <div className="cardquestion-image">

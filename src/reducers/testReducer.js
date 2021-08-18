@@ -7,6 +7,7 @@ export const deckInitialState={
     score:70,
     answer:'',
     question:deck.splice(-1,1),
+    index:1
 }
 
 const testReducer=(state, action)=>{
@@ -18,6 +19,7 @@ const testReducer=(state, action)=>{
             score:70,
             answer:'',
             question:deck.splice(-1,1),
+            index:1
                 }
         case 'NEXT_QUESTION':
             return {
@@ -26,7 +28,8 @@ const testReducer=(state, action)=>{
             //returns the length of the new array. we need to return
             //the mutated array. (splice vs. slice, foreach vs. map)
             question:state.deck.splice(-1,1),
-            answer:''
+            answer:'',
+            index:state.index+1
         }
         case 'CURRENT_ANSWER':
             return {
