@@ -117,10 +117,10 @@ const spatialType = [
         {id:nanoid(),value:'E'}
       ],
       questionPhoto:{
-        id:nanoid(), value:'spatialSix-One'
+        id:nanoid(), value:'spatialSix-one'
       },
       answerPhoto:{
-        id:nanoid(), value:'spatialSix-Two'
+        id:nanoid(), value:'spatialSix-two'
       }
     },
   {
@@ -154,7 +154,7 @@ const spatialType = [
     question: "Andrew has to move 7 boxes, but he can only carry two boxes at one time. How many trips does he have to make?",
     answer:'A',
     questionPhoto:{
-      id:nanoid(), value:'spatialTen-One'
+      id:nanoid(), value:null
     },
     word:true,
     type:'MC',
