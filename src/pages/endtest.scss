@@ -9,7 +9,7 @@
         background-color: white;
         border-radius: 8px;
         box-shadow: $shadow;
-        height:55vh;
+        min-height:40vh;
     }
     &-title{
         border-radius: 8px;
@@ -20,6 +20,6 @@
         max-width:35vh;
         font-weight: 500;
         margin-top: .5rem;
-        margin-bottom:6rem
+        margin-bottom:2rem
     }
 }
