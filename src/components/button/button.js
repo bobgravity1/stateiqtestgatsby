@@ -9,7 +9,7 @@ export const Button = ({width, page, size, text, color}) => {
 
     return (
     <div className='button-main'>
-       <Link to={`${page}`}>
+       <Link exact to={`${page}`}>
            <button style={widthset} className={`${color} ${size} text button-main-button`}>{text}</button>
        </Link>
     </div>

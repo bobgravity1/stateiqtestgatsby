@@ -1,14 +1,14 @@
 import React from 'react'
 import {Button} from './button'
 
-const Scoreoptionbuttons = () => {
+const Scoreoptionbuttons = ({pageOne, pageTwo, buttonTextOne, buttonTextTwo}) => {
     return (
         <div className='scoreoptionbuttons'>
             <div className="scoreoptionbuttons-button">
-                <Button width='15rem' text='Free Score' page='test' size="xlarge" color="blue" /> 
+                <Button page={pageOne} width='15rem' text={buttonTextOne} size="xlarge" color="blue" /> 
             </div>
             <div className="scoreoptionbuttons-button">
-                <Button width='15rem' text='Score & Analysis' page='test' size="xlarge" color="pink" />     
+                <Button page={pageTwo} width='15rem' text={buttonTextTwo} size="xlarge" color="pink" />     
             </div>
         </div>
     )

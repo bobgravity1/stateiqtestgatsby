@@ -41,7 +41,7 @@ const BG = () => {
             <hr className='banner-container-hr'  />
             Professionally built.
           </p>
-          <Button text='Start Test!' page='test' size="large" color="pink" />   
+          <Button text='Start Test!' page='/test/test' size="large" color="pink" />   
         </div>
       </BackgroundImage>
     </>
