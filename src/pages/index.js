@@ -45,7 +45,8 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+const Index = React.memo(IndexPage);
+export default Index
 
 
 

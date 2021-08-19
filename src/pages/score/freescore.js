@@ -11,7 +11,7 @@ import pinkBrain from '../../images/header-meta-icon.svg'
 // text for this page
 const text={
     title:"You scored: ",
-    subtitle:'If you would like to find out more about your score and get a full analysis of your intelligence press the blue button below! Otherwise press the home button',
+    subtitle:'If you would like to find out more about your score, see where you rank compared to others, and get a full analysis of your intelligence press the blue button below! Otherwise press the home button',
     buttonTextOne:'Score Analysis',
     buttonTextTwo:'Return Home'
 }
