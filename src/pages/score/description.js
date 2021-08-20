@@ -4,11 +4,9 @@ import {useState, useEffect, useContext} from "react"
 // gatsby query w/ graphql
 import { graphql } from 'gatsby'
 // components
-import BannerDescription from '../../components/banner/bannerdescription'
 import Column from '../../components/index/column'
 import Blackbar from '../../components/index/blackbar'
 import Paragraph from '../../components/index/paragraph'
-import Image from '../../components/images/image'
 import Split from '../../components/index/split'
 import SEO from '../../components/seo'
 //questions-context
@@ -45,16 +43,9 @@ const Description = ({data}) => {
     <Layout>
       <SEO description="stateIQtest - the best test out there" title={'stateIQtest'} />
           <div>
-              {/* ADD A PRICE TAG... USE STRIPE GRAPHIC */}
-            <BannerDescription/>
-            {/* <Image image={image} />
-            <Image image={imageTwo} /> */}
-        {/* NEW TEXT */}
             <Column />
-            {/* try to reuse. text and images should be passed through like props! */}
             <Split /> 
             <Split /> 
-        {/* NEW COMPONENT */}
           </div>
           <h1 style={{color:"red"}}>entirely new component goes here with more pictures</h1>
     </Layout>
