@@ -1,8 +1,6 @@
 import * as React from "react";
 import Layout from "../../components/layout"
 import {useState, useEffect, useContext} from "react"
-// gatsby query w/ graphql
-import { graphql } from 'gatsby'
 // components
 import Column from '../../components/index/column'
 import Blackbar from '../../components/index/blackbar'
@@ -44,8 +42,8 @@ const Description = ({data}) => {
       <SEO description="stateIQtest - the best test out there" title={'stateIQtest'} />
           <div>
             <Column />
-            <Split /> 
-            <Split /> 
+            <Split />
+            <Split />
           </div>
           <h1 style={{color:"red"}}>entirely new component goes here with more pictures</h1>
     </Layout>
