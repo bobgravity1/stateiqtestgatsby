@@ -1,7 +1,10 @@
 import * as React from "react";
 import Layout from "../../components/layout"
 import {useState, useEffect, useContext} from "react"
+// gatsby query w/ graphql
+import { graphql } from 'gatsby'
 // components
+import Image from '../../components/image/image'
 import Column from '../../components/index/column'
 import Blackbar from '../../components/index/blackbar'
 import Paragraph from '../../components/index/paragraph'
@@ -27,6 +30,8 @@ const text={
 const Description = ({data}) => {
   const dispatch=useContext(QuestionsDispatchContext)
   const state=useContext(QuestionsStateContext)
+  // images being queries from the page query (inside the banner folder)
+  const images=data.allFile.edges
   // inline styling
   const pinkBrainStyle={
     height:'5rem',
@@ -41,6 +46,11 @@ const Description = ({data}) => {
     <Layout>
       <SEO description="stateIQtest - the best test out there" title={'stateIQtest'} />
           <div>
+            <div className="flex">
+            <Image data={images[0]} />
+            <Image data={images[1]} />
+            <Image data={images[2]} />
+            </div>
             <Column />
             <Split />
             <Split />
@@ -50,6 +60,26 @@ const Description = ({data}) => {
   </>
   );
 };
+
+
+export const query = graphql`query{
+  allFile(filter: {relativeDirectory: {eq: "description"}}) {
+    edges {
+      node {
+        id
+        childImageSharp {
+          gatsbyImageData(
+            height: 400
+            placeholder: BLURRED
+            formats: WEBP
+            transformOptions: {cropFocus: CENTER, fit: COVER}
+            aspectRatio: 1.2
+            )
+        }
+      }
+    }
+  }
+}`
 
 const Index = React.memo(Description);
 export default Index
