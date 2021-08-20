@@ -37,14 +37,14 @@ const Test = ({data}) => {
       <SEO title='test part of iq test' image={logo} />
         <div className={`${active?'test-active':'test'}`}>
           <div className='test-container'>
-        <Card_Question data={data}/>
-        <Card_Answer data={data}/>
+            <Card_Question data={data}/>
+            <Card_Answer data={data}/>
+          </div>
+            <Test_Buttons />
         </div>
-        <Test_Buttons />
-        </div>
-        {testData.map((item, idx) => (
-        <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
-      ))}
+            {testData.map((item, idx) => (
+            <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
+            ))}
     </Layout>
 </>
   )

@@ -25,7 +25,7 @@ const Freescore = () => {
     <Layout>
         <SEO title='end of test part of iq test' image={logo} />
         <Card_Score 
-        pageOne='/score/freescore'
+        pageOne='/score/description'
         pageTwo='/'
         buttonTextOne={text.buttonTextOne}
         buttonTextTwo={text.buttonTextTwo}

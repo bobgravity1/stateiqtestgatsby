@@ -13,26 +13,24 @@ const text={
     buttonTextOne:'Free Score',
     buttonTextTwo:'Score & Analysis'
 }
-
 const endtest = () => {
     const pinkBrainStyle={
         height:'5rem',
     }
-
     return (
-        <>
-    <Layout>
-        <SEO title='end of test part of iq test' image={logo} />
-        <Card_Score 
-        pageOne='/score/freescore'
-        pageTwo='/'
-        buttonTextOne={text.buttonTextOne}
-        buttonTextTwo={text.buttonTextTwo}
-        title={text.title} 
-        subtitle={text.subtitle} 
-        style={pinkBrainStyle} 
-        image={pinkBrain} />
-    </Layout>
+    <>
+        <Layout>
+            <SEO title='end of test part of iq test' image={logo} />
+            <Card_Score 
+            pageOne='/score/freescore'
+            pageTwo='/score/description'
+            buttonTextOne={text.buttonTextOne}
+            buttonTextTwo={text.buttonTextTwo}
+            title={text.title} 
+            subtitle={text.subtitle} 
+            style={pinkBrainStyle} 
+            image={pinkBrain} />
+        </Layout>
     </>
     )
 }

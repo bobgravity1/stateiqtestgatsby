@@ -1,9 +1,7 @@
 import React, {useEffect, useState, useContext} from 'react'
 import {useStaticQuery, graphql} from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import Img from "gatsby-image"
-// imported gatsby query for dynamic paths
-import QuestionImage from '../gatsby-image/questionImage'
+// components
 import {Button} from '../button/button'
 //context
 import {QuestionsStateContext} from '../../context/GlobalContextProvider'

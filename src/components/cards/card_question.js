@@ -4,8 +4,7 @@ import logo from '../../images/questions/logicSix-two.png'
 import { StaticImage } from "gatsby-plugin-image"
 // called in the testbutton component
 import {QuestionsStateContext} from '../../context/GlobalContextProvider'
-// gatsby photo
-import {data} from '../gatsby-image/questionImage'
+
 
 const Card_Question = ({data}) => {
   // const image = data?.avatar?.childImageSharp?.gatsbyImageData (syntax)

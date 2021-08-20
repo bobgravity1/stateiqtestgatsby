@@ -7,13 +7,13 @@ import { Button } from "../button/button";
 //context - just the dispatch is needed to trigger first render of questions
 import {QuestionsDispatchContext} from '../../context/GlobalContextProvider'
 
-const BG = () => {
+const Banner = () => {
   const dispatch=useContext(QuestionsDispatchContext)
   // this is the old depracated gatsby-image technique
   //using fluid and fixed is now depracated
   const data = useStaticQuery(graphql`
     query Images {
-      image: file(relativePath: { eq: "mainbrain.jpg" }) {
+      image: file(relativePath: { eq: "banner/mainbrain.jpg" }) {
         childImageSharp {
           fixed {
             ...GatsbyImageSharpFixed_withWebp
@@ -47,7 +47,5 @@ const BG = () => {
     </>
   );
 };
-
-const Banner = styled(BG)``;
 
 export default Banner
