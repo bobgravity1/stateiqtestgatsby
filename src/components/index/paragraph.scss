@@ -1,6 +1,16 @@
 p{
   margin-top: -1rem;
 }
+.paragraph-left{
+  margin: 0rem 0rem 0rem 0rem;
+
+}
+.paragraph-right{
+  margin: 0rem 0rem 0rem 0rem;
+}
+.paragraph-normal{
+  margin: 2rem 0rem 0rem 0rem;
+}
 .p-container{
   padding: 1rem 0em;
   box-shadow: $shadow-inverse
@@ -22,18 +32,39 @@ p{
 }
 
 @media(min-width:1030px){
+  .segment{
+  }
 .p-container{
-  padding: 1rem 0em;
+  padding: 1rem 7em;
   box-shadow: $shadow-inverse
 }
+.paragraph-left{
+  margin: 0rem 0rem 0rem 0rem;
+
+}
+.paragraph-right{
+  margin: 0rem 0rem 0rem 0rem;
+}
+.paragraph-normal{
+  margin: 2rem 0rem 0rem 0rem;
+}
 .paragraph{
+  min-height:30vh;
   font-weight: 400;
+  min-width:50vw;
+  display: block;
   padding:0rem 1rem;
   line-height: 1.4rem;
-  margin: 2rem 7rem 0rem 7rem;
   &-header{
     margin-bottom:1.5rem;
     margin-top: 2rem;
   }
+  section{
+    display:flex;
+  }
 }
 }
+
+// .gatsby{
+//   float:right
+// }

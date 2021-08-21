@@ -45,7 +45,7 @@ const Description = ({data}) => {
     <>
     <Layout>
       <SEO description="stateIQtest - the best test out there" title={'stateIQtest'} />
-          <div>
+          <div className='description'>
             <div className="flex">
             <Image data={images[0]} />
             <Image data={images[1]} />
@@ -69,11 +69,12 @@ export const query = graphql`query{
         id
         childImageSharp {
           gatsbyImageData(
-            height: 400
             placeholder: BLURRED
             formats: WEBP
-            transformOptions: {cropFocus: CENTER, fit: COVER}
-            aspectRatio: 1.2
+            height:400
+            width:400
+            transformOptions: {fit: COVER}
+            aspectRatio: 1.7
             )
         }
       }

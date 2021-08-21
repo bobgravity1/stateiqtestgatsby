@@ -1,6 +1,23 @@
 .bannerimage{
-    padding:1rem;
-    margin: .5em;
-    background-color: black;
-    border-radius: 8px;
+display:flex;
+justify-content: center;
+}
+@media(min-width:1030px){
+    .image-right{
+        margin-bottom:2rem;
+        margin-right:0rem !important;
+        margin-left:2rem !important;
+        float:right;
+            }
+    .image-left{
+        margin-bottom:2rem;
+        margin-right:2rem !important;
+        margin-left:0rem !important;
+        float:left;
+            }
+.bannerimage{
+        margin-top: 2rem;
+        border: 7px solid $secondary-color-hover;
+        box-shadow: $shadow-light;
+    }
 }
