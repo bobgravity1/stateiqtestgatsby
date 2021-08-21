@@ -16,7 +16,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 8px;
+
         p{
             width:95%;
             font-weight: 600;
@@ -84,11 +84,12 @@
 }
 @media(min-width:1030px){
     .split{
-        margin: 1.5rem 0rem;
+        margin: 0rem 0rem;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         &-piece{
+            border-radius: 8px;
                 p{
                     font-size:1.4rem;
                     margin-top:0rem;
@@ -96,8 +97,8 @@
         }
         div{
             text-align: center;
-            margin: 2rem 1.5rem;
-            width:45vw;
+            margin: 2rem 1rem;
+            width:46vw;
         }
     }
 }

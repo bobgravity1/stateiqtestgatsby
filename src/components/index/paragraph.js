@@ -2,35 +2,33 @@ import React from 'react';
 import Image from '../image/image'
 let images;
 const Paragraph = ({header, text, right, left, data}) => {
-
     if(data){
        images=data.allFile.edges
     }
-    console.log(images)
     return (
         <div className='p-container'>
             {header?
             <>
-        <div className="segment">
-        {data&&<Image right data={images[1]} />}
-            {/* here we are asking if this paragraph has a header passed down. if so render it */}
-            {/* here we are also asking if the paragraph is to the left of an image or right? to show margins accordingly */}
-             <div className={`${!header&&'header-text'} ${left?'paragraph-left':'paragraph-right'} paragraph`}>
-             <h1 className="title paragraph-header">History of IQ</h1>
-             <div className={`text paragraph-paragaph `}>{text[0]}</div> 
-             <div className='text paragraph-paragraph'>{text[1]}</div>
-             </div>    
-        </div>       
-       
+                <div className="segment">
+                {data&&<Image right data={images[1]} />}
+                    {/* here we are asking if this paragraph has a header passed down. if so render it */}
+                    {/* here we are also asking if the paragraph is to the left of an image or right? to show margins accordingly */}
+                    <div className={`${!header&&'header-text'} ${left?'paragraph-left':'paragraph-right'} paragraph`}>
+                    <h1 className="title paragraph-header">History of IQ</h1>
+                    <div className={`text paragraph-paragaph `}>{text[0]}</div> 
+                    <div className='text paragraph-paragraph'>{text[1]}</div>
+                    </div>    
+                </div>       
              </>
              :
              <>
-             {data&&<Image left data={images[2]} />}
-             <div className={`${!header&&'header-text'} ${left?'paragraph-right':'paragraph-left'} paragraph-normal paragraph`}>
-             
-             <p className='text paragraph-paragraph'>{text[2]}{text[3]}</p> 
-             
-             </div>
+                {data&&<Image left data={images[2]} />}
+                <div className={`${!header&&'header-text'} ${left?'paragraph-right':'paragraph-left'} paragraph-normal paragraph`}>
+                
+                <p className='text paragraph-paragraph'>{text[2]}</p> 
+                <p className='text paragraph-paragraph'>{text[3]}</p> 
+                
+                </div>
              </>
             }           
  

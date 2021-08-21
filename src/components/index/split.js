@@ -16,12 +16,12 @@ const Split = () => {
                <p>The average IQ is 100. Most people (about 68%) have an IQ between 85 and 115. What's your IQ?</p>
         </div>
         <div className="split-piece split-right">
-            <h1>Get a Professional Score Analysis<br />share with friends!</h1>
+            <h1>Get a Professional Score Analysis</h1>
           
                 <div className="split-right-image">
                     <img src={logoSix} />
                 </div>
-                <p>Purchase a full score breakdown for 1.99 at the end of the test! Every result and analysis is 100% unique. </p> 
+                <p>Purchase a full score breakdown for 1.99 at the end of the test! Every analysis is 100% unique. </p> 
         </div>
     </div>
 </>
