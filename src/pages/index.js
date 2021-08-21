@@ -38,9 +38,10 @@ const IndexPage = ({data}) => {
             <Column />
             <Paragraph left data={data} text={text} header/>
             <Blackbar /> 
-            <Paragraph right data={data} text={text} />
+            <Paragraph left data={data} text={text} />
             <Blackbar button />
             <Split />
+            <Paragraph data={data} text={text} />
             <Blackbar />
           </div>
     </Layout>

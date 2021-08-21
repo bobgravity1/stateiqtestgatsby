@@ -5,7 +5,6 @@ export const Button = ({width, page, size, text, color}) => {
     const widthset={
         width:`${width}`
     }
-    console.log(width)
 
     return (
     <div className='button-main'>

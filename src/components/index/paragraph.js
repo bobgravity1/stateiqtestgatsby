@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from '../image/image'
 let images;
-const Paragraph = ({header, text, right, left, data}) => {
+const Paragraph = ({header, text, left, data}) => {
     if(data){
        images=data.allFile.edges
     }
@@ -22,7 +22,7 @@ const Paragraph = ({header, text, right, left, data}) => {
              </>
              :
              <>
-                {data&&<Image left data={images[2]} />}
+                {data&&<Image left={left&&true} data={images[2]} />}
                 <div className={`${!header&&'header-text'} ${left?'paragraph-right':'paragraph-left'} paragraph-normal paragraph`}>
                 
                 <p className='text paragraph-paragraph'>{text[2]}</p> 
