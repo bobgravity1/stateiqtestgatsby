@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, {useState, useEffect} from 'react'
 import Layout from "../../components/layout"
 import logo from '../../images/logo.svg'
 // components
@@ -14,6 +14,7 @@ const text={
     buttonTextTwo:'Score & Analysis'
 }
 const endtest = () => {
+    
     const pinkBrainStyle={
         height:'5rem',
     }

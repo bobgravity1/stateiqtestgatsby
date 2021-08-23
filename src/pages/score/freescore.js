@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useState, useEffect} from 'react'
 //score-context
 import {QuestionsStateContext} from '../../context/GlobalContextProvider'
 import Layout from "../../components/layout"
@@ -18,13 +18,20 @@ const text={
 
 const Freescore = () => {
     const state=useContext(QuestionsStateContext);
+    const [scoreLoading, setScoreLoading]=useState(true)
     const pinkBrainStyle={
         height:'5rem',
     }
+    useEffect(()=>{
+        setTimeout(()=>{
+    setScoreLoading(false)
+        },3000)
+    })
     return (
     <Layout>
         <SEO title='end of test part of iq test' image={logo} />
         <Card_Score 
+        scoreLoading={scoreLoading}
         pageOne='/score/description'
         pageTwo='/'
         buttonTextOne={text.buttonTextOne}

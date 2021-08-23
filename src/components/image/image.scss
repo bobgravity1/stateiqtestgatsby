@@ -16,6 +16,7 @@ h1{
     bottom:.5rem;
     font-family: $link-font;
     border-top: 2px solid white;
+    width:20vw;
     font-size: .8rem;
     font-weight: 700;
     padding: 1rem 2rem 0rem 2rem;
@@ -24,25 +25,24 @@ h1{
 }
 @media(min-width:1030px){
     .image-right{
-        margin-bottom:1.8rem;
         margin-right:0rem !important;
         margin-left:1.8rem !important;
         float:right;
             }
     .image-left{
-        margin-bottom:1.8rem;
         margin-right:1.8rem !important;
         margin-left:0rem !important;
         float:left;
             }
-.bannerimage{
-    border:1rem solid black;
-    margin:0rem 0rem;
-    display:block;
+    .bannerimage{
+        border:1rem solid black;
+        margin:0rem 0rem;
+        margin-bottom: 1.2rem;
+        display:block;
         margin-top: 2rem;
         box-shadow: $shadow;
-        h1{
-            max-width:25vw;
+            h1{
+                max-width:25vw;
+            }
         }
     }
-}
