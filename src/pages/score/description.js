@@ -4,6 +4,7 @@ import {useState, useEffect, useContext} from "react"
 // gatsby query w/ graphql
 import { graphql } from 'gatsby'
 // components
+import Banner from '../../components/index/banner'
 import Image from '../../components/image/image'
 import Column from '../../components/index/column'
 import Blackbar from '../../components/index/blackbar'
@@ -47,7 +48,11 @@ const Description = ({data}) => {
     <Layout>
       <SEO description="stateIQtest - the best test out there" title={'stateIQtest'} />
           <div className='description'>
+          {/* // options are brainnew.jpg - description.png - indextest.png */}
+            <Banner photoName='description.png' />
+            <Column />
             <Paragraph white left data={data} text={text} header={header}/>
+            <Split />
           </div>
           <h1 style={{color:"red"}}>entirely new component goes here with more pictures</h1>
     </Layout>
