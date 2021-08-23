@@ -27,7 +27,7 @@ const Card_score = ({
           <>
           <article className='cardscore-container'>
           <img style={style} src={image} />
-            <h1 className='cardscore-title'>{title}{score&&score}</h1>
+            <h1 className='cardscore-title'>{title}<span>{score&&score}</span></h1>
             <p className='cardscore-subtitle'>{subtitle}</p>
             <Scoreoptionbuttons 
                 pageOne={pageOne} 

@@ -13,8 +13,7 @@ const text={
     buttonTextOne:'Free Score',
     buttonTextTwo:'Score & Analysis'
 }
-const endtest = () => {
-    
+const endtest = () => { 
     const pinkBrainStyle={
         height:'5rem',
     }

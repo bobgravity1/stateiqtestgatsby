@@ -28,6 +28,9 @@
     &-title{
         border-radius: 8px;
         padding:.5rem 0rem;
+        span{
+            color:$secondary-color-hover;
+        }
     }
     &-subtitle{
         margin:0 auto;

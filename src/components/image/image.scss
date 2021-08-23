@@ -26,18 +26,18 @@ h1{
 @media(min-width:1030px){
     .image-right{
         margin-right:0rem !important;
-        margin-left:1.8rem !important;
+        margin-left:2rem !important;
         float:right;
             }
     .image-left{
-        margin-right:1.8rem !important;
+        margin-right:2rem !important;
         margin-left:0rem !important;
         float:left;
             }
     .bannerimage{
         border:1rem solid black;
         margin:0rem 0rem;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.8rem;
         display:block;
         margin-top: 2rem;
         box-shadow: $shadow;
