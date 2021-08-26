@@ -58,8 +58,17 @@ h1{
         margin-top: 2rem;
         box-shadow: $shadow;
             h1{
-                width:18vw;
+                width:23vw;
                 font-size: 1rem;
             }
         }
+    }
+
+    @media(min-width:1520px){
+        .bannerimage{  
+                h1{
+                    width:20vw;
+                    font-size: 1rem;
+                }
+            }
     }
