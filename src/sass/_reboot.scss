@@ -5,30 +5,25 @@
 
 // default reset settings
 * {
-    margin: 0px;
-    padding: 0px;
-    -webkit-font-smoothing: antialiased;
-    list-style-type: none;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  list-style-type: none;
+  box-sizing: border-box;
   }
-  body {
-    font-weight: normal;
-  }
-  // passed in as a prop to any text components (paragraph etc...)
-  .white{
-    color:white;
-  }
-  .title{  
-    font-family:$secondary-font;
-  }
-  .font{
-    font-family:$primary-font
-  }
-  .text{
-    letter-spacing: .05rem;
-     font-family:$primary-font; 
-  }
-// state
+body {
+  font-weight: normal;
+}
+.title{  
+  font-family:$secondary-font;
+}
+.font{
+  font-family:$primary-font
+}
+.text{
+  letter-spacing: .05rem;
+  font-family:$primary-font; 
+}
 //active-inactive nav bar
 #body-active{
   transition:all ease-out .15s;
@@ -36,5 +31,9 @@
   filter: blur(.4px);
 }
 //   color classes
-
+// passed in as a prop to any text components (paragraph etc...)
+.white{
+  color:white;
+  background-color: black;
+}
 

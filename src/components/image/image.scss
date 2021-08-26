@@ -1,10 +1,29 @@
+//conditionals
+.black-image{
+    background-color: black;
+border:1rem solid black;
+}
+.white-image{
+    background-color: white;
+border:1rem solid white;
+}
+
+.white-text{
+    color:white;
+    border-top: 2px solid white;
+}
+
+.black-text{
+    border-top: 2px solid black;
+    color:black
+}
+
 .bannerimage{
 display:flex;
 display:none;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background-color: black;
 margin:0rem 1rem;
 &-image{
 border:0px solid white;
@@ -15,12 +34,10 @@ h1{
     position:relative;
     bottom:.5rem;
     font-family: $link-font;
-    border-top: 2px solid white;
     width:20vw;
     font-size: .8rem;
     font-weight: 700;
     padding: 1rem 2rem 0rem 2rem;
-    color:white;
 }
 }
 @media(min-width:1030px){
@@ -34,15 +51,15 @@ h1{
         margin-left:0rem !important;
         float:left;
             }
-    .bannerimage{
-        border:1rem solid black;
+    .bannerimage{  
         margin:0rem 0rem;
         margin-bottom: 1.8rem;
         display:block;
         margin-top: 2rem;
         box-shadow: $shadow;
             h1{
-                max-width:25vw;
+                width:18vw;
+                font-size: 1rem;
             }
         }
     }

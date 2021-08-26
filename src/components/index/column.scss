@@ -49,3 +49,14 @@
         }
     }
 }
+
+@media(min-width:1420px){
+.column{
+    &-title{
+        font-size:2.8rem
+    }
+    &-text{
+        font-size:1.3rem;
+    }
+}
+}
