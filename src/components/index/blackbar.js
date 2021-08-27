@@ -17,7 +17,7 @@ const Blackbar = ({button, text, description}) => {
            <h1 className='title'>{text.title}</h1> 
            <p className='title'>{text.subtitle}</p>
            <p style={{fontSize:'1.2rem'}} className='title'>{text.stripeSubtitle}</p>
-        <p style={{marginBottom:'-2rem'}} className='stripe-banner'>{text.checkoutSubtitle}{description&&<img className='stripe-icon' src={stripe} />}</p>
+           {description&&<p style={{marginBottom:'-2rem'}} className='stripe-banner'>{text.checkoutSubtitle}<img className='stripe-icon' src={stripe} /></p>}
            <Button onClick={()=>dispatch({type:'NEXT_QUESTION'})} text={text.buttonText} page='/test/test' size="large" color="pink"/>
             </div>
         ):

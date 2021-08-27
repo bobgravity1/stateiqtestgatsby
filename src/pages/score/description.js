@@ -45,12 +45,8 @@ const Description = ({data}) => {
       <SEO description="stateIQtest - the best test out there" title={'stateIQtest'} />
           <div>
           {/* // options are brainnew.jpg - description.png - indextest.png */}
-            <Banner 
-           
-            text={bannerText}
-            photoName='description.png' 
-            />
-            <Paragraph whiteText header={header}  left data={data} text={paragraphText} />
+            <Banner text={bannerText} photoName='description.png' />
+            <Paragraph whiteText header={header} left data={data} text={paragraphText} />
             <Column text={threeColumnText}/>   
             <Split imgOne={imgOne} imgTwo={imgTwo} />
             <Blackbar description text={blackBarTextButton} button/>

@@ -31,16 +31,17 @@ const Freescore = () => {
     <Layout>
         <SEO title='end of test part of iq test' image={logo} />
         <Card_Score 
-        scoreLoading={scoreLoading}
-        pageOne='/score/description'
-        pageTwo='/'
-        buttonTextOne={text.buttonTextOne}
-        buttonTextTwo={text.buttonTextTwo}
-        title={text.title} 
-        score={state.score} 
-        subtitle={text.subtitle} 
-        style={pinkBrainStyle} 
-        image={pinkBrain} />
+            scoreLoading={scoreLoading}
+            pageOne='/score/description'
+            pageTwo='/'
+            buttonTextOne={text.buttonTextOne}
+            buttonTextTwo={text.buttonTextTwo}
+            title={text.title} 
+            score={state.score} 
+            subtitle={text.subtitle} 
+            style={pinkBrainStyle} 
+            image={pinkBrain} 
+        />
     </Layout>
     )
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import Image from '../image/image'
 let images;
 const Paragraph = ({header, text, left, data, whiteText}) => {
-    console.log(text)
     if(data){
        images=data.allFile.edges
     }

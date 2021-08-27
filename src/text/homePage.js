@@ -31,7 +31,7 @@ export const threeColumnText=[
     ]
 
 export const blackBarText={
-    title:'The Best Free IQ Test',
+    title:'The worst Free IQ Test',
     subtitle:`"The Best Test Out There"`,
 }
 

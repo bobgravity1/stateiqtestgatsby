@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Column = ({text}) => {
-    console.log(text)
     return (
         <>
              {/* <hr /> */}

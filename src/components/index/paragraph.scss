@@ -77,6 +77,14 @@ p{
   }
 }
 
+@media(min-width:1720px){
+  .paragraph{
+    &-paragraph{
+      margin-bottom: 4rem;
+    }
+}
+}
+
 // .gatsby{
 //   float:right
 // }
