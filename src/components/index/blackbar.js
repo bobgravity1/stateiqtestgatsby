@@ -3,18 +3,22 @@ import {Button} from '../button/button'
 import logoinverse from '../../images/logoinverse.svg'
 //context - just the dispatch is needed to trigger first render of questions
 import {QuestionsDispatchContext} from '../../context/GlobalContextProvider'
+// svg
+import stripe from '../../images/stripe.svg'
 
 const title=['Free Online Assesment', 'The Best Free IQ Test']
 
-const Blackbar = ({button}) => {
+const Blackbar = ({button, text, description}) => {
     const dispatch=useContext(QuestionsDispatchContext)
     return (
         <div className='c blackbar'>        
         {button?(
             <div>
-           <h1 className='title'>{title[0]}</h1> 
-           <p className='title'>"The best test out there."</p>
-           <Button onClick={()=>dispatch({type:'NEXT_QUESTION'})} text='Start Test!' page='/test/test' size="large" color="pink"/>
+           <h1 className='title'>{text.title}</h1> 
+           <p className='title'>{text.subtitle}</p>
+           <p style={{fontSize:'1.2rem'}} className='title'>{text.stripeSubtitle}</p>
+        <p style={{marginBottom:'-2rem'}} className='stripe-banner'>{text.checkoutSubtitle}{description&&<img className='stripe-icon' src={stripe} />}</p>
+           <Button onClick={()=>dispatch({type:'NEXT_QUESTION'})} text={text.buttonText} page='/test/test' size="large" color="pink"/>
             </div>
         ):
         (

@@ -1,3 +1,18 @@
+.stripe-banner{  
+    position:static;
+    font-size: 1rem!important;
+    font-family:$secondary-font;
+}
+
+.stripe-icon{
+    height:2.3rem; 
+    top:.6rem; 
+    right:8.5rem;
+    position:relative
+}
+
+
+
 .blackbar{
     display:flex;
     flex-direction: column;
@@ -38,5 +53,20 @@
     & p{
         margin-top:.5rem
     }
+    
 }
+}
+@media(min-width:1030px){
+    .stripe-banner{  
+        font-size:1.2rem;
+        position:relative;
+        bottom:3rem;
+        left:7rem;
+    }
+    .stripe-icon{
+        height:4rem; 
+        top:1rem; 
+        right:3rem;
+        position:relative
+    }
 }
