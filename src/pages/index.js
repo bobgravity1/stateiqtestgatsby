@@ -40,12 +40,12 @@ const IndexPage = ({data}) => {
                     indexPage
             />
             <Column text={threeColumnText} />
-            <Paragraph left data={data} text={paragraphText} header/>
+            <Paragraph left data={data} text={paragraphText[0]} header={'History of IQ'}/>
             <Blackbar text={blackBarText} /> 
-            <Paragraph left data={data} text={paragraphText} />
+            <Paragraph left data={data} text={paragraphText[1]} />
             <Blackbar text={blackBarTextButton} button />
             <Split imgOne={imgOne} imgTwo={imgTwo}/>
-            <Paragraph data={data} text={paragraphText} />
+            <Paragraph data={data} text={paragraphText[2]} />
             <Blackbar />
           </div>
     </Layout>
