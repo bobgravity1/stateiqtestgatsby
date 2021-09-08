@@ -6,6 +6,7 @@
 			border: none;
 			border-radius: .2em;
 			font-weight: 600;
+			
 		}
 	}
 	.normal {
@@ -21,11 +22,12 @@
 		padding: .6rem .7rem;
 	}
 	.pink {
+		box-shadow: 2px 5px 25px 0px rgba(236,72,153, .5);
 		background-color: $primary-color-hover;
-			transition: .4s all;     
+		transition: all .4s ease-in;     
 		&:hover {
 			background-color: rgb(255, 101, 178);
-			box-shadow:none;
+			box-shadow: 1.5px 4px 22px 0px rgba(255, 101, 178, 0.5)
 		}
 	}
 	.blue {

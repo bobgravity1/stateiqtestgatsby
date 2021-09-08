@@ -7,7 +7,7 @@ module.exports = {
     author: "Robert O'Toole, Andrew O'Toole",
     image:"/logo.svg",
     url: "https://www.stateiqtest.org",
-    description:"good iq test"
+    description:"very dank iq test"
   },
   plugins: [
     {
@@ -35,6 +35,14 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `articles`,
+        path: path.join(__dirname, `src`, `articles`),
+      },
+    },
+    `gatsby-plugin-mdx`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,

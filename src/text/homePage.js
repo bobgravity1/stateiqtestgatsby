@@ -2,7 +2,7 @@ export const bannerText={
     bannerTitle:'TEST YOUR IQ',
     bannerSubtitle:'Try our State of the Art IQ Test. Professionally scored.',
     bannerSubtitleTwo:'Professionally built.',
-    buttonText:'IQ Test'
+    buttonText:'Start Test!'
 }
 
 export const threeColumnText=[
@@ -38,7 +38,7 @@ export const blackBarText={
 export const blackBarTextButton={
     title:'Free Online Assesment',
     subtitle:`"Most accurate IQ test!"`,
-    buttonText:'IQ Test'
+    buttonText:'Start Test!'
 }
 
 export const paragraphText=[

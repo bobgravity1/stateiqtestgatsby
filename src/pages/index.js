@@ -31,7 +31,7 @@ const IndexPage = ({data}) => {
   return (
     <>
     <Layout>
-      <SEO description="stateIQtest - the best test out there" title={'stateIQtest'} />
+      <SEO description="stateIQtest - the best test out there" title='stateIQtest' />
           <div className='index-page'>
           {/* // options are brainnew.jpg - description.png - indextest.png */}
             <Banner buttonText='Start Test!' 
