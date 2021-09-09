@@ -43,7 +43,7 @@
         cursor: pointer;
         color:$primary-color-hover;
         font-size: .7rem;
-        left:3rem;
+        left:10vw;
         top:.3rem;
         position:relative;
         padding:.3rem;
@@ -51,6 +51,14 @@
         background-color: white;
         border:1px solid $primary-color-hover;
     }
+}
+
+@media(min-width:400px){
+.articles{
+    button{
+        left:22.5vw;
+    }
+}
 }
 
 @media(min-width:700px){
@@ -88,7 +96,7 @@
         font-size:1rem;
     }
     button{
-        left:80vw;
+        left:84.75vw;
     }
 }
 }
