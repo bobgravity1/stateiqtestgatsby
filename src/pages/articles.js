@@ -1,4 +1,5 @@
 import * as React from 'react'
+import {useContext, useReducer, useDispatch, useEffect} from 'react'
 import {Link} from 'gatsby'
 import Layout from '../components/layout'
 //components
@@ -8,23 +9,31 @@ import logo from '../images/logo.svg'
 // gatsby query w/ graphql
 import { graphql } from 'gatsby'
 
-const Article = ({data}) => {
-  console.log(data)
+const Articles = ({data}) => {
   return (
     <>
     <Layout>
         <SEO title='end of test part of iq test' description='' image={logo} />
-        {
-      data.allMdx.nodes.map(node=> (  
-            <li key={node.id}>
-               <Link to={`/articles/${node.slug}`}>
-              <h2>{node.frontmatter.title}</h2>
-              <p>Posted: {node.frontmatter.date}</p>
-              </Link>
-            </li>
-         
-        ))
-      }
+       <section className='articles'>
+         <h1>Articles & News</h1>
+         <h2>click an article below</h2>
+         <div className='articles-item'>
+            {
+          data.allMdx.nodes.map(node=> (  
+               <>   
+                  <li key={node.id}>
+                  <label>
+                    <h3>{node.frontmatter.title}</h3>
+                    <p>{node.frontmatter.date}</p>
+                  </label>
+                  <span>{node.excerpt}</span>
+                  <Link style={{textDecoration:'none'}} to={`/articles/${node.slug}`}> <button>read more</button> </Link>
+                  </li>         
+                  </>  
+            ))
+          }
+        </div>
+      </section>
     </Layout>
     </>
   )
@@ -38,6 +47,7 @@ export const query = graphql`query{
         title
       }
       body
+      excerpt
       slug
       id
     }
@@ -45,4 +55,4 @@ export const query = graphql`query{
 }
 `
 
-export default Article
+export default Articles

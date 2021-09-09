@@ -11,7 +11,6 @@ import Paragraph from '../components/index/paragraph'
 import Split from '../components/index/split'
 import SEO from '../components/seo'
 //questions-context
-import {QuestionsDispatchContext} from '../context/GlobalContextProvider'
 import {QuestionsStateContext} from '../context/GlobalContextProvider'
 // page content
 import {bannerText, threeColumnText, paragraphText, blackBarTextButton, blackBarText} from '../text/homePage.js'
@@ -21,7 +20,6 @@ import imgOne from '../images/charts.svg'
 import imgTwo from '../images/mobile-panel.svg'
 
 const IndexPage = ({data}) => {
-  const dispatch=useContext(QuestionsDispatchContext)
   const state=useContext(QuestionsStateContext)
   useEffect(() => {
     if (typeof window !== `undefined`) {
