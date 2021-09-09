@@ -43,6 +43,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-mdx`,
+    `gatsby-remark-line-breaks`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,

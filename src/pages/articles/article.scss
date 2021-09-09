@@ -1,0 +1,16 @@
+.article{
+    font-family: $primary-font;
+    padding:3rem 6rem;
+    span{
+        color:$secondary-color-hover;
+        font-weight:600
+    }
+    h1{
+        margin-bottom: .5rem;
+    }
+    p{
+        font-weight: 500;
+        margin-top: 1rem;
+        text-indent: 1rem;
+    }
+}
