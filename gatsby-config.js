@@ -36,10 +36,17 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `articles`,
-        path: path.join(__dirname, `src`, `articles`),
+        path: `${__dirname}/src/content/news`,
+        name: 'news',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/content/readus`,
+        name: 'readus',
       },
     },
     `gatsby-plugin-mdx`,

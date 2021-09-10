@@ -8,7 +8,7 @@ import { graphql } from 'gatsby'
 //components
 import SEO from '../../components/seo'
 
-const Article = ({data}) => {
+const Readus = ({data}) => {
   return (
     <Layout>
         <SEO title={data.mdx.frontmatter.title} description='' />
@@ -37,4 +37,4 @@ export const query = graphql`
   }
 `
 
-export default Article
+export default Readus

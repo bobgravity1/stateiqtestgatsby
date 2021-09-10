@@ -24,8 +24,9 @@ const dispatchTwo=useContext(QuestionsDispatchContext);
                 <Link style={{ textDecoration:'none'}} to="/"><li>Why Our IQ Test</li></Link>
                 <Link style={{ textDecoration:'none'}} to="/"><li>About Us</li></Link>
                 <Link style={{ textDecoration:'none'}} to="/"><li>Research</li></Link>
-                <Link style={{ textDecoration:'none'}} to="/articles"><li>News </li></Link>
+                <Link style={{ textDecoration:'none'}} to="/news"><li>News </li></Link>
                 <Link style={{ textDecoration:'none'}} to="/"><li>FAQ </li></Link>
+                <Link style={{ textDecoration:'none'}} to="/readus"><li>Read Us </li></Link>
             </div>
             </ul>       
             <div onClick={()=>dispatch({type:'SET_ACTIVE'})} className='burger'>

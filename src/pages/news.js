@@ -1,20 +1,17 @@
 import * as React from 'react'
-import {useContext, useReducer, useDispatch, useEffect} from 'react'
 import {Link} from 'gatsby'
 import Layout from '../components/layout'
 //components
 import SEO from '../components/seo'
-//images
-import logo from '../images/logo.svg'
 // gatsby query w/ graphql
 import { graphql } from 'gatsby'
 
-const Articles = ({data}) => {
+const News = ({data}) => {
   return (
     <>
     <Layout>
-        <SEO title='end of test part of iq test' description='' image={logo} />
-       <section className='articles'>
+    <SEO title='end of test part of iq test' description=''/>
+        <section className='articles'>
          <h1>Articles & News</h1>
          <h2>click an article below</h2>
          <div className='articles-item'>
@@ -27,7 +24,7 @@ const Articles = ({data}) => {
                     <p>{node.frontmatter.date}</p>
                   </label>
                   <span>{node.excerpt}</span>
-                  <Link style={{textDecoration:'none'}} to={`/articles/${node.slug}`}> <button>read more</button> </Link>
+                  <Link style={{textDecoration:'none'}} to={`/news/${node.slug}`}> <button>read more</button> </Link>
                   </li>         
                   </>  
             ))
@@ -40,7 +37,10 @@ const Articles = ({data}) => {
 }
 
 export const query = graphql`query{
-  allMdx(sort: {order: DESC, fields: frontmatter___date}) {
+  allMdx(
+    filter: {fileAbsolutePath: {regex: "/news/"}}
+    sort: {fields: frontmatter___date, order: DESC}
+  ) {
     nodes {
       frontmatter {
         date(formatString: "MMMM D, YYYY")
@@ -55,4 +55,4 @@ export const query = graphql`query{
 }
 `
 
-export default Articles
+export default News

@@ -21,6 +21,7 @@ import imgTwo from '../images/mobile-panel.svg'
 
 const IndexPage = ({data}) => {
   const state=useContext(QuestionsStateContext)
+  
   useEffect(() => {
     if (typeof window !== `undefined`) {
       window.scrollTo(0, 0);
