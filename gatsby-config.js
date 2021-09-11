@@ -49,6 +49,13 @@ module.exports = {
         name: 'readus',
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/content/faq`,
+        name: 'faq',
+      },
+    },
     `gatsby-plugin-mdx`,
     `gatsby-remark-line-breaks`,
     `gatsby-plugin-image`,

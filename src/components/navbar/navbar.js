@@ -25,7 +25,7 @@ const dispatchTwo=useContext(QuestionsDispatchContext);
                 <Link style={{ textDecoration:'none'}} to="/"><li>About Us</li></Link>
                 <Link style={{ textDecoration:'none'}} to="/"><li>Research</li></Link>
                 <Link style={{ textDecoration:'none'}} to="/news"><li>News </li></Link>
-                <Link style={{ textDecoration:'none'}} to="/"><li>FAQ </li></Link>
+                <Link style={{ textDecoration:'none'}} to="/faq"><li>FAQ </li></Link>
                 <Link style={{ textDecoration:'none'}} to="/readus"><li>Read Us </li></Link>
             </div>
             </ul>       
