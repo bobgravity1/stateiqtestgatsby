@@ -1,4 +1,4 @@
-.article{
+.markdown{
     font-family: $primary-font;
     padding:3rem 1.5rem;
     span{
@@ -7,14 +7,18 @@
     }
     h1{
         margin-bottom: .5rem;
+        color:black;
+        font-size:1.7rem
     }
     h2{
         margin-top: 1rem;
+        text-indent: 0rem;
         color: $secondary-color-hover;
     }
     p{
         font-weight: 400;
         margin-top: 1rem;
+        font-size:.8rem;
         text-indent: 1rem;
     }
 }

@@ -16,7 +16,7 @@ const faq = ({data}) => {
     return (
         <Layout>
         <SEO title={content.frontmatter.title} description='' />
-          <article className='article'>
+          <article className='markdown'>
             <h1>{content.frontmatter.title}</h1>
             <span>{content.frontmatter.date}</span>
             <p>

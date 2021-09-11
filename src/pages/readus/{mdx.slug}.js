@@ -12,7 +12,7 @@ const Readus = ({data}) => {
   return (
     <Layout>
         <SEO title={data.mdx.frontmatter.title} description='' />
-          <article className='article'>
+          <article className='markdown'>
             <h1>{data.mdx.frontmatter.title}</h1>
             <span>{data.mdx.frontmatter.date}</span>
             <p>

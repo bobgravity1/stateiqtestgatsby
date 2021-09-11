@@ -12,6 +12,7 @@
 @import "../pages/score/paidscore";
 @import "../pages/score/description";
 @import "../pages/news";
+@import "../pages/markdown";
 
 
 //homepage components
@@ -22,9 +23,6 @@
 @import "../components/index/paragraph";
 @import "../components/index/blackbar";
 @import "../components/index/split";
-
-//articlepage components
-@import "../pages/frontmatter";
 
 //main component pieces
 @import "../components/image/image";
