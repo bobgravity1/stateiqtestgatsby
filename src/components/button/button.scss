@@ -31,10 +31,12 @@
 		}
 	}
 	.blue {
+		box-shadow: 2px 5px 25px 0px rgb(7, 148, 243);
 		background-color: rgb(7, 148, 243);
 		transition: .4s all;
 		&:hover {
 			background-color: rgb(57, 174, 252);
+			box-shadow: 1.5px 4px 22px 0px rgb(57, 174, 252);
 		}
 	}
 
