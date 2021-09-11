@@ -30,7 +30,7 @@ const faq = ({data}) => {
 }
 
 export const query= graphql`query{
-    allMdx(filter: {fileAbsolutePath: {regex: "/facts/"}}) {
+    allMdx(filter: {fileAbsolutePath: {regex: "/faq/"}}) {
       edges {
         node {
           id
