@@ -10,7 +10,7 @@ const News = ({data}) => {
   return (
     <>
     <Layout>
-    <SEO title='end of test part of iq test' description=''/>
+    <SEO title=''  description='' />
         <section className='articles'>
          <h1>Articles & News</h1>
          <h2>click an article below</h2>
@@ -37,6 +37,11 @@ const News = ({data}) => {
 }
 
 export const query = graphql`query{
+  site {
+    siteMetadata {
+      title
+    }
+  }
   allMdx(
     filter: {fileAbsolutePath: {regex: "/news/"}}
     sort: {fields: frontmatter___date, order: DESC}

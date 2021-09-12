@@ -53,6 +53,11 @@ const IndexPage = ({data}) => {
 };
 
 export const query = graphql`query{
+  site {
+    siteMetadata {
+      title
+    }
+  }
   allFile(filter: {relativeDirectory: {eq: "banner"}}) {
     edges {
       node {

@@ -11,7 +11,7 @@ import SEO from '../../components/seo'
 const Readus = ({data}) => {
   return (
     <Layout>
-        <SEO title={data.mdx.frontmatter.title} description='' />
+        <SEO title={data.mdx.frontmatter.seoTitle} description={data.mdx.frontmatter.seoDescription}  />
           <article className='markdown'>
             <h1>{data.mdx.frontmatter.title}</h1>
             <span>{data.mdx.frontmatter.date}</span>
