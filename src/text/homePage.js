@@ -38,7 +38,11 @@ export const blackBarText={
 export const blackBarTextButton={
     title:'Free Online Assesment',
     subtitle:`"Most accurate IQ test!"`,
+<<<<<<< HEAD
+    buttonText:'  IQ Test  '
+=======
     buttonText:'Start Test!'
+>>>>>>> 820a71eb4d5cfa9e409c80e8cb5df1c8c114db33
 }
 
 export const paragraphText=[
