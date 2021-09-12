@@ -36,6 +36,11 @@ const Readus = ({data}) => {
 }
 
 export const query = graphql`query{
+  site {
+    siteMetadata {
+      title
+    }
+  }
   allMdx(
     filter: {fileAbsolutePath: {regex: "/readus/"}}
     sort: {fields: frontmatter___date, order: DESC}

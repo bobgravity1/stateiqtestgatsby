@@ -15,7 +15,7 @@ const aboutus = ({data}) => {
    
     return (
         <Layout>
-        <SEO title={content.frontmatter.title} description='' />
+        <SEO title={content.frontmatter.seoTitle} description={content.frontmatter.seoDescription} />
           <article className='markdown'>
             <h1>{content.frontmatter.title}</h1>
             <p>
