@@ -97,7 +97,24 @@
         font-size:1rem;
     }
     button{
-        margin-left:59rem
+        margin-left:0rem
     }
 }
 }
+
+@media(min-width:1400px){
+    .articles{
+        button{
+            margin-left:0rem
+        }
+    }
+    }
+
+@media(min-width:1700px){
+    .articles{
+        button{
+            margin-left:00rem
+        }
+    }
+    }
+
