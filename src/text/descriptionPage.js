@@ -9,7 +9,7 @@ export const bannerText={
 }
 
 export const blackBarText={
-    title:'Cognitive Analysis',
+    title:'Cognitive Analysis, $2.99',
     subtitle:`"Our optional section which aims to provide you with a more complete understanding of your IQ."`,
 }
 

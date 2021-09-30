@@ -9,7 +9,7 @@ import pinkBrain from '../../images/header-meta-icon.svg'
 // text for this page
 const text={
     title:"Congratulations! You Finished the Test!",
-    subtitle:'To view you results press one of the options below:',
+    subtitle:'To view your results press one of the options below:',
     buttonTextOne:'Free Score',
     buttonTextTwo:'Score & Analysis'
 }
@@ -20,7 +20,7 @@ const endtest = () => {
     return (
     <>
         <Layout>
-            <SEO title='end of test part of iq test' description='' image={logo} />
+            <SEO title='Score calculation' description='This is where we calculate and show your IQ score range' image={logo} />
             <Card_Score 
             pageOne='/score/freescore'
             pageTwo='/score/description'

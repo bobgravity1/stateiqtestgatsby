@@ -6,7 +6,7 @@ const Banner = ({data, left, black}) => {
     return (
         <div className={`${left===true?'image-left ':'image-right'} ${black?'white-image':'black-image'} bannerimage`}>
           <GatsbyImage className='bannerimage-image' layout="fixed" image={image} />
-          <h1 className={`${black?'black-text':'white-text'}`}>We offer top quality service. private score. and anonymous whatever</h1>
+          <h1 className={`${black?'black-text':'white-text'}`}>We offer the highest quality IQ testing service. All results are secure and confidential.</h1>
         </div>
     )
 }
