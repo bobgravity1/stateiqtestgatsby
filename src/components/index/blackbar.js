@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
 import {Button} from '../button/button'
 import logoinverse from '../../images/logoinverse.svg'
+import Wave from '../../images/wavey.svg'
 //context - just the dispatch is needed to trigger first render of questions
 import {QuestionsDispatchContext} from '../../context/GlobalContextProvider'
 // svg
@@ -11,7 +12,9 @@ const title=['Free Online Assesment', 'The Best Free IQ Test']
 const Blackbar = ({button, text, description}) => {
     const dispatch=useContext(QuestionsDispatchContext)
     return (
-        <div className='c blackbar'>        
+        <> 
+        <div className='c blackbar'>   
+           
         {button?(
             <div>
            <h1 className='title'>{text.title}</h1> 
@@ -30,6 +33,7 @@ const Blackbar = ({button, text, description}) => {
         )
           } 
         </div>
+        </>
     )
 }
 
