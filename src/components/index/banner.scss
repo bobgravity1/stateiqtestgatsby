@@ -112,8 +112,7 @@
             box-shadow: $shadow-light;
         }   
         &-container{
-            width:45vw;
-            margin-left: 10vh;
+            
             height:92vh;
             &-hr{
                 margin: 1.5vh auto;
@@ -137,6 +136,14 @@
     }
     .buttonx{
         z-index:20000;
+    }
+    @media (min-width:900px){
+        .banner{
+            &-container{
+        width:45vw;
+            margin-left: 10vh;
+            }
+        }
     }
 
     @media(min-width:1520px){
