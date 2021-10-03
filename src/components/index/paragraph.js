@@ -15,8 +15,7 @@ const Paragraph = ({header, text, left, data, whiteText}) => {
                     {/* here we are also asking if the paragraph is to the left of an image or right? to show margins accordingly */}
                     <div className={`${!header&&'header-text'} ${left?'paragraph-left':'paragraph-right'} paragraph`}>
                     <h1 className="title paragraph-header">{header}</h1>
-                    <div className={`text paragraph-paragraph `}>{text[0]}</div> 
-                    <div className='text paragraph-paragraph'>{text[1]}</div>
+                    <div className={`text paragraph-paragraph `}>{text}</div> 
                     </div>    
                 </div>       
              </>
@@ -24,8 +23,7 @@ const Paragraph = ({header, text, left, data, whiteText}) => {
              <>
                 {data&&<Image black={whiteText} left={left&&true} data={images[1]} />}
                 <div className={`${!header&&'header-text'} ${left?'paragraph-right':'paragraph-left'} paragraph-normal paragraph`}>  
-                <p className='text paragraph-paragraph'>{text[2]}</p> 
-                <p className='text paragraph-paragraph'>{text[3]}</p> 
+                <p className='text paragraph-paragraph'>{text}</p> 
                 </div>
              </>
             }           

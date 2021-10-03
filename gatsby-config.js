@@ -7,7 +7,7 @@ module.exports = {
     author: "Robert O'Toole, Andrew O'Toole",
     image:"/logo.svg",
     url: "https://www.stateiqtest.org",
-    description:"good iq test"
+    description:"very dank iq test"
   },
   plugins: [
     {
@@ -35,6 +35,50 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/content/news`,
+        name: 'news',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/content/faq`,
+        name: 'faq',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/content/research`,
+        name: 'research',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/content/whyourtest`,
+        name: 'whyourtest',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/content/aboutus`,
+        name: 'aboutus',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/content/readus`,
+        name: 'readus',
+      },
+    },
+    `gatsby-plugin-mdx`,
+    `gatsby-remark-line-breaks`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,

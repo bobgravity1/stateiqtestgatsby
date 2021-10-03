@@ -42,15 +42,15 @@ const Description = ({data}) => {
   return (
     <>
     <Layout>
-      <SEO description="stateIQtest - the best test out there" title={'stateIQtest'} />
+      <SEO description="stateIQtest - the best test out there" title='' />
           <div>
           {/* // options are brainnew.jpg - description.png - indextest.png */}
             <Banner text={bannerText} photoName='description.png' />
-            <Paragraph whiteText header={header} left data={data} text={paragraphText} />
+            <Paragraph whiteText header={header} left data={data} text={paragraphText[0]} />
             <Column text={threeColumnText}/>   
             <Split imgOne={imgOne} imgTwo={imgTwo} />
             <Blackbar description text={blackBarTextButton} button/>
-            <Paragraph left data={data} text={paragraphText} />  
+            <Paragraph left data={data} text={paragraphText[1]} />  
           </div>
     </Layout>
   </>

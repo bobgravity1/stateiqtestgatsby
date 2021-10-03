@@ -11,7 +11,6 @@ import Paragraph from '../components/index/paragraph'
 import Split from '../components/index/split'
 import SEO from '../components/seo'
 //questions-context
-import {QuestionsDispatchContext} from '../context/GlobalContextProvider'
 import {QuestionsStateContext} from '../context/GlobalContextProvider'
 // page content
 import {bannerText, threeColumnText, paragraphText, blackBarTextButton, blackBarText} from '../text/homePage.js'
@@ -21,8 +20,8 @@ import imgOne from '../images/charts.svg'
 import imgTwo from '../images/mobile-panel.svg'
 
 const IndexPage = ({data}) => {
-  const dispatch=useContext(QuestionsDispatchContext)
   const state=useContext(QuestionsStateContext)
+  
   useEffect(() => {
     if (typeof window !== `undefined`) {
       window.scrollTo(0, 0);
@@ -31,8 +30,8 @@ const IndexPage = ({data}) => {
   return (
     <>
     <Layout>
-      <SEO description="stateIQtest - the best test out there" title={'stateIQtest'} />
-          <div className='index-page'>
+      <SEO description="stateIQtest - the best test out there" title='stateIQtest' />
+          <div className='x index-page'>
           {/* // options are brainnew.jpg - description.png - indextest.png */}
             <Banner buttonText='Start Test!' 
                     photoName='mainbrain.jpg'
@@ -40,12 +39,12 @@ const IndexPage = ({data}) => {
                     indexPage
             />
             <Column text={threeColumnText} />
-            <Paragraph left data={data} text={paragraphText} header/>
+            <Paragraph left data={data} text={paragraphText[0]} header={'History of IQ'}/>
             <Blackbar text={blackBarText} /> 
-            <Paragraph left data={data} text={paragraphText} />
+            <Paragraph left data={data} text={paragraphText[1]} />
             <Blackbar text={blackBarTextButton} button />
             <Split imgOne={imgOne} imgTwo={imgTwo}/>
-            <Paragraph data={data} text={paragraphText} />
+            <Paragraph data={data} text={paragraphText[2]} />
             <Blackbar />
           </div>
     </Layout>
@@ -54,6 +53,11 @@ const IndexPage = ({data}) => {
 };
 
 export const query = graphql`query{
+  site {
+    siteMetadata {
+      title
+    }
+  }
   allFile(filter: {relativeDirectory: {eq: "banner"}}) {
     edges {
       node {

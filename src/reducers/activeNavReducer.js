@@ -10,6 +10,13 @@ const activeNavReducer=(state, action)=> {
             ...state, 
             active:!state.active
         }
+      case 'LINK_CLICKED':
+        return {
+            ...state, 
+            active:false
+        }
+      case 'INIT_STATE':
+        return initialState
   default:
     throw new Error('ERROR - Refer to Reducer')
 }   

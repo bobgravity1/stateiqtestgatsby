@@ -1,0 +1,45 @@
+.markdown{
+    font-family: $primary-font;
+    padding:3rem 1.5rem;
+    span{
+        color:$secondary-color-hover;
+        font-weight:600
+    }
+    h1{
+        margin-bottom: .5rem;
+        color:black;
+        font-size:1.7rem
+    }
+    h2{
+        margin-top: 1rem;
+        text-indent: 0rem;
+        color: $secondary-color-hover;
+    }
+    h3{
+        margin-top: 1rem;
+        text-indent: 0rem;
+        color: black;
+        font-weight:500;
+        font-size:1.2rem
+    }
+    p{
+        font-weight: 400;
+        margin-top: 1rem;
+        font-size:.8rem;
+        text-indent: 1rem;
+    }
+}
+
+@media(min-width:768px){
+    .markdown{
+        p{
+            font-size:1.1rem;
+        }   
+    }
+}
+
+@media(min-width:1100px){
+    .markdown{
+        padding:3rem 6rem;
+    }  
+}

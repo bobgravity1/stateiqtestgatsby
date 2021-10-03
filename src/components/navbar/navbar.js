@@ -20,12 +20,13 @@ const dispatchTwo=useContext(QuestionsDispatchContext);
             </div>
             </Link>
             <ul className={`${active&&'nav-active'} nav-links`}>
-            <div>
-                <Link style={{ textDecoration:'none'}} to="/"><li>Why Our IQ Test</li></Link>
-                <Link style={{ textDecoration:'none'}} to="/"><li>About Us</li></Link>
-                <Link style={{ textDecoration:'none'}} to="/"><li>Research</li></Link>
-                <Link style={{ textDecoration:'none'}} to="/"><li>News </li></Link>
-                <Link style={{ textDecoration:'none'}} to="/"><li>FAQ </li></Link>
+            <div onClick={()=>dispatch({type:'LINK_CLICKED'})}>
+                <Link style={{ textDecoration:'none'}} to="/whyourtest"><li>Why Our IQ Test</li></Link>
+                <Link style={{ textDecoration:'none'}} to="/aboutus"><li>About Us</li></Link>
+                <Link style={{ textDecoration:'none'}} to="/research"><li>Research</li></Link>
+                <Link style={{ textDecoration:'none'}} to="/news"><li>News </li></Link>
+                <Link style={{ textDecoration:'none'}} to="/faq"><li>FAQ </li></Link>
+                <Link style={{ textDecoration:'none'}} to="/readus"><li>Read Us </li></Link>
             </div>
             </ul>       
             <div onClick={()=>dispatch({type:'SET_ACTIVE'})} className='burger'>
