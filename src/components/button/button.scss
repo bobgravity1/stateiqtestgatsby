@@ -21,7 +21,7 @@
 		padding: .6rem .7rem;
 	}
 	.pink {
-		box-shadow: 2px 5px 25px 0px rgba(236,72,153, .5);
+		box-shadow: 2px 5px 25px 0px rgba(236,72,153, .6);
 		background-color: $primary-color-hover;
 		transition: all .4s ease-in;     
 		&:hover {
@@ -30,12 +30,12 @@
 		}
 	}
 	.blue {
-		box-shadow: 2px 5px 25px 0px rgb(7, 148, 243);
+		box-shadow: 2px 5px 25px 0px rgb(7, 148, 243, .6);
 		background-color: rgb(7, 148, 243);
 		transition: .4s all;
 		&:hover {
 			background-color: rgb(57, 174, 252);
-			box-shadow: 1.5px 4px 22px 0px rgb(57, 174, 252);
+			box-shadow: 1.5px 4px 22px 0px rgb(57, 174, 252, .5);
 		}
 	}
 
