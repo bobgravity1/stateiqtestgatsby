@@ -20,7 +20,7 @@ const endtest = () => {
     return (
     <>
         <Layout>
-            <SEO title='Score calculation' description='This is where we calculate and show your IQ score range' image={logo} />
+            <SEO title='IQ test score calculation' description='This is where we calculate and show your IQ score range' image={logo} />
             <Card_Score 
             pageOne='/score/freescore'
             pageTwo='/score/description'
