@@ -165,30 +165,6 @@ const spatialType = [
       {id:nanoid(),value:'D', word:'7'}
     ]
   },
-  {
-      id: nanoid(),
-      title: "Question Ten",
-      correct:false,
-      category:'spatial',
-      question: "Which is the missing box?",
-      answer:'C',
-      word:false,
-      type:'MCphotoTwo',
-      options: [
-        {id:nanoid(),value:'A'},
-        {id:nanoid(),value:'B'},
-        {id:nanoid(),value:'C'},
-        {id:nanoid(),value:'D'},
-        {id:nanoid(),value:'E'},
-        {id:nanoid(),value:'F'}
-      ],
-      questionPhoto:{
-        id:nanoid(), value:'spatialTen-one'
-      },
-      answerPhoto:{
-        id:nanoid(), value:'spatialTen-two'
-      }
-    },
     {
       id: nanoid(),
       title: "Question Eleven",
@@ -856,7 +832,41 @@ const linguisticType = [
       },
       type:'FIB',
       word:false,
-    }
+    },
+    {
+      id: nanoid(),
+      title: "Question FourtyTwo",
+      correct:false,
+      category:'logic',
+      question: "If it takes 4 factory workers 4 minutes to make 4 wheels, how long would it take 100 factory workers to make 100 wheels?",
+      answer:'D',
+      type:'MC',
+      options: [
+        {id:nanoid(),value:'A', word:'100 minutes'},
+        {id:nanoid(),value:'B', word:'32 minutes'},
+        {id:nanoid(),value:'C', word:'10 minutes'},
+        {id:nanoid(),value:'D', word:'4 minutes'}
+      ]
+    },
+    {
+      id: nanoid(),
+      title: "Question FortyThree",
+      correct:false,
+      category:'logic',
+      question: "You are hiring workers to build a machine. You are to choose the cheapest option. Company A offers you 6 medium skilled workers which will take eleven hours to build the machine at 12.20 per/hour. Company B can offer you 4 high skilled workers to build the machine in ten hours at 20.00 per/hour. Company C will sell you the machine for 850. which is the better deal? Do not use paper.",
+      answer:'D',
+      questionPhoto:{
+        id:nanoid(), value:null 
+      },
+      word:true,
+      type:'MC',
+      options: [
+        {id:nanoid(),value:'A', word:'Company A'},
+        {id:nanoid(),value:'B', word:'Company B'},
+        {id:nanoid(),value:'C', word:'Company C'},
+        {id:nanoid(),value:'D', word:'All of them are the same.'},
+      ]
+    },
 ]
 
 // takes 10 random cards from shuffled deck of each type
