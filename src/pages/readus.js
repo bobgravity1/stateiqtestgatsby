@@ -9,7 +9,7 @@ const Readus = ({data}) => {
   return (
     <>
     <Layout>
-    <SEO title='Latest scientific studies' description='Read more about our studies, what we do, along with how and why we do it.'/>
+    <SEO title='Read Us' description='Read more about our studies, what we do, along with how and why we do it, + read about our IQ tests and experiments.'/>
         <section className='articles'>
          <h1>Read Us</h1>
          <h2>click an article below</h2>

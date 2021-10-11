@@ -10,7 +10,7 @@ const News = ({data}) => {
   return (
     <>
     <Layout>
-    <SEO title=''  description='' />
+    <SEO title='News'  description='Read News about our service, organization, and general interesting developments and science based articles!' />
         <section className='articles'>
          <h1>Articles & News</h1>
          <h2>click an article below</h2>

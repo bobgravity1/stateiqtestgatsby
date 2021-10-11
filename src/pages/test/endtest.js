@@ -10,7 +10,7 @@ import pinkBrain from '../../images/header-meta-icon.svg'
 const text={
     title:"Congratulations! You Finished the Test!",
     subtitle:'To view your results press one of the options below:',
-    buttonTextOne:'Free Score',
+    buttonTextOne:'Free IQ Range',
     buttonTextTwo:'Score & Analysis'
 }
 const endtest = () => { 

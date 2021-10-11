@@ -15,7 +15,7 @@ const faq = ({data}) => {
    
     return (
         <Layout>
-        <SEO title={content.frontmatter.title} description='' />
+        <SEO title={content.frontmatter.title} description='Frequently asked questions, either about our IQ test, IQ tests in general or our company and what we do.' />
           <article className='markdown'>
             <h1>{content.frontmatter.title}</h1>
             <span>{content.frontmatter.date}</span>
