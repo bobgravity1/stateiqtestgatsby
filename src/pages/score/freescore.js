@@ -29,7 +29,7 @@ const Freescore = () => {
     })
     return (
     <Layout>
-        <SEO title='end of test part of iq test' description='' image={logo} />
+        <SEO title='Free score section' description='This is where you receive your free score, and where you have the option to keep your result, or see what is offered in our breakdown.' image={logo} />
         <Card_Score 
             scoreLoading={scoreLoading}
             pageOne='/score/description'

@@ -54,13 +54,13 @@ export const threeColumnText=[
 
     export const paragraphText=[
         `
-        **** > * Full breakdown of your score and what it means for you
+        * Full breakdown of your score and what it means for you
         * Analysis of your linguistic ability (ENGLISH)
-        * An additional description of how having a higher linguistic ability can help you in the workplace.
+        * An additional description of how having a higher linguistic ability can help you in the modern day workplace.
         * Analysis of your logical reasoning ability
-        * An additional description of how a higher spatial ability can help you to better understand patterns around you.
+        * An additional description of how a higher logical ability can help you to better understand patterns around you.
         * Analysis of your spatial reasoning ability
-        * An additional description of how having a higher spatial reasoning ability can help you to better understand structures and spatial differences in different climates.
+        * An additional description of how having a higher spatial reasoning ability can help you to better understand structures and spatial differences in a variety of different careers.
         * Detailed score analysis
         * Career paths best suited to different kinds of intelligence
         * Your exact IQ score rather than your score range
@@ -79,6 +79,10 @@ export const threeColumnText=[
         `In lieu of having a set selection of data to work with, our IQ test changes overtime to become more accurate. Keeping and maintaining an accurate test and scoring method is paramount to our mission here at STATEIQTEST. We also seek to remove the controversy that surrounds IQ tests and psychometric testing in general, both for certified psychologists as well as the general public. Many people have developed innacurate and predominantly negative views of IQ tests. Psychometric testing, though it remains controversial- is still the fundamental premise for which nearly all psychological research is based- so to discount psychometric testing entirely due to controvesy or shifting societal attitudes is to in a sense- remove the baby with the bathwater. Or, more similarly, to throw out the parents with the baby. This is not to say that IQ tests are outdated- but they are negatively discounted due to preconceived notions of IQ tests being connected to ideas of racial superiority. In a way, nearly all tests- even those designed to test only certain areas of competency- follow the same fundamental principles of an IQ test. Grades in school for example, whether they be measured on a percentage basis related to the amount correct being compared to the amount of overall questions- are tests of competency. What separates an IQ test from a test of competency in what it attempts to measure- in that IQ tests are intended to measure your overall ability to process information than they are your actual innate qualities/abilities. And, as always, if you have any questions or are unsure of whether or not you want to purchase, feel free to visit our FAQ section for more information or our Contact section to speak to us directly if our FAQ section does not suffice in answering your question.`,
       ]
     export const bulletList=[ 
-
+        `Full breakdown of your score and what it means for you
+        
+        
+        `
+        
 
     ]

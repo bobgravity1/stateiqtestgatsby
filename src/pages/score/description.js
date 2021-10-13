@@ -42,7 +42,7 @@ const Description = ({data}) => {
   return (
     <>
     <Layout>
-      <SEO description="stateIQtest - the best test out there" title='' />
+      <SEO description="This section is there to outline what we offer in our optional premium IQ test result analysis." title='IQ Test - Breakdown/Results' />
           <div>
           {/* // options are brainnew.jpg - description.png - indextest.png */}
             <Banner text={bannerText} photoName='description.png' />
