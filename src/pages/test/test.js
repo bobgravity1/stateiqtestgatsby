@@ -34,7 +34,7 @@ const Test = ({data}) => {
   return (
 <>
     <Layout>
-      <SEO title='test part of iq test' image={logo} />
+      <SEO title='the iq test' image={logo} />
         <div className={`${active?'test-active':'test'}`}>
           <div className='test-container'>
             <Card_Question data={data}/>

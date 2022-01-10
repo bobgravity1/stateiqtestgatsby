@@ -3,11 +3,11 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.stateiqtest.org",
-    title: "StateIQTest - State of the Art IQ Test",
-    author: "Robert O'Toole, Andrew O'Toole",
+    title: "IQ Test - State of the Art Intelligence Test",
+    author: "STATEIQTEST LIMITED",
     image:"/logo.svg",
     url: "https://www.stateiqtest.org",
-    description:"very dank iq test"
+    description:"IQ stands for Intelligence Quotient and is a measure of standard intelligence. This IQ test is free to take, a deeper analysis of your IQ score is also available for $2.99."
   },
   plugins: [
     {

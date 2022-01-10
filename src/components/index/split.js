@@ -19,7 +19,7 @@ const Split = ({imgOne, imgTwo}) => {
                 <div className="split-right-image">
                     <img src={imgTwo} />
                 </div>
-                <p>Purchase a full score breakdown for 1.99 at the end of the test! Every analysis is 100% unique. </p> 
+                <p>Purchase a full score breakdown for 2.99 at the end of the test! Every analysis is 100% unique. </p> 
         </div>
     </div>
 </>

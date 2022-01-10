@@ -28,7 +28,7 @@ const spatialType = [
       {id:nanoid(),value:'C'},
       {id:nanoid(),value:'D'},
       {id:nanoid(),value:'E'},
-      {id:nanoid(),value:'F'}
+      {id:nanoid(),value:'F'},
     ]
   },
   {
@@ -50,19 +50,6 @@ const spatialType = [
       {id:nanoid(),value:'D'},
       {id:nanoid(),value:'E'},
     ]
-  },
-  {
-    id: nanoid(),
-    title: "Question Three",
-    correct:false,
-    question: "How many circles contain a pink dot?",
-    answer:'12',
-    category:'spatial',
-    type:'FIB',
-    word:false,
-    questionPhoto:{
-      id:nanoid(), value:'spatialThree'
-    },
   },
   {
     id: nanoid(),
@@ -114,7 +101,7 @@ const spatialType = [
         {id:nanoid(),value:'B'},
         {id:nanoid(),value:'C'},
         {id:nanoid(),value:'D'},
-        {id:nanoid(),value:'E'}
+        {id:nanoid(),value:'E'},
       ],
       questionPhoto:{
         id:nanoid(), value:'spatialSix-one'
@@ -140,7 +127,7 @@ const spatialType = [
       {id:nanoid(),value:'E'},
       {id:nanoid(),value:'F'},
       {id:nanoid(),value:'G'},
-      {id:nanoid(),value:'H'}
+      {id:nanoid(),value:'H'},
     ],
     questionPhoto:{
       id:nanoid(), value:'spatialSeven'
@@ -162,7 +149,7 @@ const spatialType = [
       {id:nanoid(),value:'A', word:'4'},
       {id:nanoid(),value:'B', word:'3'},
       {id:nanoid(),value:'C', word:'3.5'},
-      {id:nanoid(),value:'D', word:'7'}
+      {id:nanoid(),value:'D', word:'7'},
     ]
   },
     {
@@ -312,7 +299,7 @@ const logicType = [
       {id:nanoid(),value:'C'},
       {id:nanoid(),value:'D'},
       {id:nanoid(),value:'E'},
-      {id:nanoid(),value:'F'}
+      {id:nanoid(),value:'F'},
     ]
   },
   {
@@ -526,7 +513,7 @@ const logicType = [
       {id:nanoid(),value:'D', word:'29'},
     ]
   },
-  {
+    {
     id: nanoid(),
     title: "Question FourtyEight",
     correct:false,
@@ -548,7 +535,7 @@ const logicType = [
 ]
 
 const linguisticType = [
-      {
+    {
         id: nanoid(),
         title: "Question TwentySix",
         correct:false,
@@ -560,7 +547,7 @@ const linguisticType = [
         word:false,
         category:'linguistic',
         type:'FIB'
-      },
+    },
     {
       id: nanoid(),
       title: "Question TwentySeven",
@@ -615,7 +602,7 @@ const linguisticType = [
         {id:nanoid(),value:'A', word:'trivet'},
         {id:nanoid(),value:'B', word:'tributary'},
         {id:nanoid(),value:'C', word:'triptych'},
-        {id:nanoid(),value:'E', word:'triad'}
+        {id:nanoid(),value:'E', word:'triad'},
       ]
     },
     {
@@ -704,10 +691,10 @@ const linguisticType = [
           {id:nanoid(),value:'A', word:'eerie'},
           {id:nanoid(),value:'B', word:'quirky'},
           {id:nanoid(),value:'C', word:'esoteric'},
-          {id:nanoid(),value:'E', word:'curious'}
+          {id:nanoid(),value:'E', word:'curious'},
         ],
       },
-      {
+    {
         id: nanoid(),
         title: "Question ThirtyFive",
         correct:false,
@@ -716,7 +703,7 @@ const linguisticType = [
         answer:'D',
         questionPhoto:{
           id:nanoid(), value:null
-        },
+    },
         word:true,
         type:'MC',
         options: [
@@ -725,8 +712,8 @@ const linguisticType = [
           {id:nanoid(),value:'C', word:'conclude'},
           {id:nanoid(),value:'D', word:'observe'},
         ]
-      },
-      {
+    },
+    {
         id: nanoid(),
         title: "Question ThirtySix",
         correct:false,
@@ -742,10 +729,10 @@ const linguisticType = [
           {id:nanoid(),value:'A', word:'exacerbate'},
           {id:nanoid(),value:'B', word:'alleviate'},
           {id:nanoid(),value:'C', word:'amplify'},
-          {id:nanoid(),value:'D', word:'inflate'}
+          {id:nanoid(),value:'D', word:'inflate'},
         ]
-      },
-      {
+    },
+    {
         id: nanoid(),
         title: "Question ThirtySeven",
         correct:false,
@@ -761,10 +748,10 @@ const linguisticType = [
           {id:nanoid(),value:'A', word:'domination'},
           {id:nanoid(),value:'B', word:'captivity'},
           {id:nanoid(),value:'C', word:'responsibility'},
-          {id:nanoid(),value:'D', word:'burden'}
+          {id:nanoid(),value:'D', word:'burden'},
         ]
-      },
-      {
+    },
+    {
         id: nanoid(),
         title: "Question ThirtyEight",
         correct:false,
@@ -779,9 +766,10 @@ const linguisticType = [
         options: [
           {id:nanoid(),value:'A', word:'Femur'},
           {id:nanoid(),value:'B', word:'Fibula'},
-          {id:nanoid(),value:'C', word:'Mandible'}
+          {id:nanoid(),value:'B', word:'Metatarsus'},
+          {id:nanoid(),value:'D', word:'Mandible'},
         ]
-      },
+    },
     {
       id: nanoid(),
       title: "Question ThirtyNine",
@@ -798,7 +786,7 @@ const linguisticType = [
         {id:nanoid(),value:'A', word:'crevice'},
         {id:nanoid(),value:'B', word:'gorge'},
         {id:nanoid(),value:'C', word:'canyon'},
-        {id:nanoid(),value:'D', word:'recess'}
+        {id:nanoid(),value:'D', word:'recess'},
       ]
     },
     {
@@ -817,7 +805,7 @@ const linguisticType = [
         {id:nanoid(),value:'A', word:'envelope'},
         {id:nanoid(),value:'B', word:'pen'},
         {id:nanoid(),value:'C', word:'stamp'},
-        {id:nanoid(),value:'D', word:'mail'}
+        {id:nanoid(),value:'D', word:'mail'},
       ]
     },
     {
@@ -845,7 +833,7 @@ const linguisticType = [
         {id:nanoid(),value:'A', word:'100 minutes'},
         {id:nanoid(),value:'B', word:'32 minutes'},
         {id:nanoid(),value:'C', word:'10 minutes'},
-        {id:nanoid(),value:'D', word:'4 minutes'}
+        {id:nanoid(),value:'D', word:'4 minutes'},
       ]
     },
     {
@@ -853,8 +841,8 @@ const linguisticType = [
       title: "Question FortyThree",
       correct:false,
       category:'logic',
-      question: "You are hiring workers to build a machine. You are to choose the cheapest option. Company A offers you 6 medium skilled workers which will take eleven hours to build the machine at 12.20 per/hour. Company B can offer you 4 high skilled workers to build the machine in ten hours at 20.00 per/hour. Company C will sell you the machine for 850. which is the better deal? Do not use paper.",
-      answer:'D',
+      question: "You are hiring workers to build a machine. You are to choose the cheapest option. Company A offers you 6 medium skilled workers which will take eleven hours to build the machine at 12.20 per/hour for each employee. Company B can offer you 4 high skilled workers to build the machine in ten hours at 20.00 per/hour. Company C will sell you the machine for 850. which is the better deal? Do not use paper.",
+      answer:'B',
       questionPhoto:{
         id:nanoid(), value:null 
       },

@@ -26,9 +26,9 @@ const Blackbar = ({button, text, description}) => {
         ):
         (
             <>
-            <img style={{height:'auto', marginBottom:'1vh', marginTop:'1.5vh'}} src={logoinverse} alt='iqtestinverselogo'></img>
+            <img style={{height:'auto', marginBottom:'1vh', marginTop:'1.5vh'}} src={logoinverse} alt='logo'></img>
             <h1 className='title'>{title[1]}</h1> 
-            <p className='title'>"The best test out there."</p>
+            <p className='title'>"Provider of the most accurate free IQ Test"</p>
             </>
         )
           } 
