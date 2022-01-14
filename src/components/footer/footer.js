@@ -4,6 +4,8 @@ import facebook from '../../images/facebook.svg';
 import twitter from '../../images/twitter.svg';
 import youtube from '../../images/youtube.svg';
 import instagram from '../../images/instagram.svg';
+import { Link } from 'gatsby';
+import GatsbyLink from 'gatsby-link';
 
 const Footer = () => {
     return (
@@ -24,26 +26,42 @@ const Footer = () => {
                 <ul>
                     <section>
                         <h1>Policies</h1>
-                            <li>Schedule</li>
-                            <li>Get in Touch</li>
-                            <li>Video</li>
-                            <li>About</li>
-                    </section>
-                    <section className='footer-podcasts'>
-                        <div>
-                        <h1>Why Our Test</h1>
-                            <li>Foodcast</li>
-                            <li>Daily Dilemma</li>
-                            <li>Documentaries</li>
-                            <li>Irish Beats</li>
-                        </div>
-                    </section>
-                    <section>
-                        <h1>Other</h1>
-                            <li>Complaints</li>
                             <li>Privacy Policy</li>
                             <li>Cookie Policy</li>
                             <li>Terms & Conditions</li>
+                            <li>Contact Us</li>
+                    </section>
+                    <section className='footer-podcasts'>
+                        <div>
+                        <h1>Read Us</h1>
+                            <li>
+                            <Link to="/readus/euphoricrecall">Euphoric Recall</Link>
+                            </li>
+                            <li>
+                            <Link to="/readus/raiseyouriq/">5 Ways to Increase Your IQ!</Link>
+                            </li>
+                            <li>
+                            <Link to="/whyourtest/">Why our IQ Test?</Link>
+                            </li>
+                            <li>
+                            <Link to="/news/einstein/">How Sleep Impacts the Brain</Link>
+                            </li>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>News</h1>
+                            <li>
+                            <Link to="/news/booksvsscreens/">Books vs Screens</Link>
+                            </li>
+                            <li>
+                            <Link to="/news/raveniq/">What is a Ravens IQ?</Link>
+                            </li>
+                            <li>
+                            <Link to="/news/zombieplants/">Zombie Plants?</Link>
+                            </li>
+                            <li>
+                            <Link to="/news/5chernobylfacts/">5 Chernobyl Facts</Link>
+                            </li>
                     </section>
                 </ul>
             </div>
