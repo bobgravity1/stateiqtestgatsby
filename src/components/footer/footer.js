@@ -28,7 +28,7 @@ const Footer = () => {
                         <h1>Policies</h1>
                             <li>Privacy Policy</li>
                             <li>Cookie Policy</li>
-                            <li>Terms & Conditions</li>
+                            <li>Terms and Conditions</li>
                             <li>Contact Us</li>
                     </section>
                     <section className='footer-podcasts'>
@@ -66,7 +66,7 @@ const Footer = () => {
                 </ul>
             </div>
                 <p className='footer-text-mobile'>
-                    Copyright © 2021. All rights 
+                    Copyright © 2022. All rights 
                     reserved. developed by stateIQtest © 
                 </p>
             </div>
