@@ -1,11 +1,11 @@
 import React, {useContext} from 'react'
+import { ReactComponentElement } from 'react';
 import logo from '../../images/logo-text-inverse.svg';
 import facebook from '../../images/facebook.svg';
 import twitter from '../../images/twitter.svg';
 import youtube from '../../images/youtube.svg';
 import instagram from '../../images/instagram.svg';
 import { Link } from 'gatsby';
-import GatsbyLink from 'gatsby-link';
 
 const Footer = () => {
     return (
@@ -19,17 +19,25 @@ const Footer = () => {
                 <img src={youtube} alt='youtube logo' />
                 <img src={instagram} alt='instagram logo' />
             </div>
-            <p className='footer-text-desktop'>Copyright © 2021. All rights reserved. developed by Square1 and 
-                    powered by PublisherPlus.com</p>
+            <p className='footer-text-desktop'>Copyright © 2021. All rights reserved. developed by STATEIQTEST LIMITED. 
+                   </p>
             </div>
             <div className="footer-links">
                 <ul>
                     <section>
                         <h1>Policies</h1>
-                            <li>Privacy Policy</li>
-                            <li>Cookie Policy</li>
-                            <li>Terms and Conditions</li>
-                            <li>Contact Us</li>
+                            <li>
+                            <Link to="/readus/privacypolicy">Privacy Policy</Link>
+                            </li>
+                            <li>
+                            <Link to="/readus/cookiepolicy">Cookie Policy</Link>
+                            </li>
+                            <li>
+                            <Link to="/readus/termsofservice">Terms and Conditions</Link>
+                            </li>
+                            <li>
+                            <Link to="/readus/disclaimer">Disclaimer</Link>
+                            </li>
                     </section>
                     <section className='footer-podcasts'>
                         <div>

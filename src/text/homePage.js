@@ -1,3 +1,4 @@
+
 export const bannerText={
     bannerTitle:'TEST YOUR IQ',
     bannerSubtitle:'Try our State of the Art IQ Test. Professionally scored.',
@@ -11,8 +12,8 @@ export const threeColumnText=[
         text:`IQ stands for intelligence quotient. 
         An IQ test measures your intelligence. 
         This test gives you a score in three different 
-        categories. Press the pink button to find 
-        out your IQ!`
+        categories. The average for each is 100. Come and find 
+        out`
     },
     {
         header:`How it works`,
@@ -27,7 +28,7 @@ export const threeColumnText=[
         in a place where your results will be kept confidential.
         We also offer a full cognitive analysis of your score 
         for an unbeatable price.`
-    }
+    },
     ]
 
 export const blackBarText={

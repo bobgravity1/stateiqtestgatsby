@@ -10,7 +10,7 @@
     {
       "sku": "DEMO002",
       "name": "Adventure Mug",
-      "description": "We’re going on an adventure! Photo by Annie Spratt on Unsplash.",
+      "description": "We're going on an adventure! Photo by Annie Spratt on Unsplash.",
       "image": "https://images.unsplash.com/photo-1454329001438-1752daa90420?auto=format&fit=crop&w=600&h=600&q=80",
       "amount": 1500,
       "currency": "USD"

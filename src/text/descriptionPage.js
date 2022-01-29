@@ -1,4 +1,3 @@
-import React from 'react'
 
 export const bannerText={
     extraTitle:'Get More',
@@ -54,7 +53,7 @@ export const threeColumnText=[
 
     export const paragraphText=[
         `
-        * Full breakdown of your score and what it means for you
+        * Full breakdown of your score and what it means for you <br>
         * Analysis of your linguistic ability (ENGLISH)
         
         * An additional description of how having a higher linguistic ability can help you in the modern day workplace.
