@@ -34,7 +34,7 @@ const Card_Answer = ({data}) => {
     {/* here we are filtering through the nodes */}
           {question.answerPhoto&&data.allFile.edges.map((item, index) => {
                 if(question.answerPhoto.value===item.node.name){
-                  return <section><div className="cardanswer-image"><GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt="" /></div></section>
+                  return <section><div className="cardanswer-image"><GatsbyImage image={item.node.childImageSharp.gatsbyImageData} alt="answer" /></div></section>
                 }
                 })}
            <ul>
