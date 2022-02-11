@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React from 'react';
 import { ReactComponentElement } from 'react';
 import logo from '../../images/logo-text-inverse.svg';
 import facebook from '../../images/facebook.svg';
@@ -58,6 +58,7 @@ const Footer = () => {
                     </section>
                     <section>
                         <h1>News</h1>
+                        <ol>
                             <li>
                             <Link to="/news/booksvsscreens/">Books vs Screens</Link>
                             </li>
@@ -70,6 +71,7 @@ const Footer = () => {
                             <li>
                             <Link to="/news/5chernobylfacts/">5 Chernobyl Facts</Link>
                             </li>
+                        </ol>
                     </section>
                 </ul>
             </div>
