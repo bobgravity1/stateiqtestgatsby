@@ -25,7 +25,9 @@ const Footer = () => {
             <div className="footer-links">
                 <ul>
                     <section>
+                        
                         <h1>Policies</h1>
+                        <ol>
                             <li>
                             <Link to="/readus/privacypolicy">Privacy Policy</Link>
                             </li>
@@ -38,10 +40,12 @@ const Footer = () => {
                             <li>
                             <Link to="/readus/disclaimer">Disclaimer</Link>
                             </li>
+                        </ol>
                     </section>
                     <section className='footer-podcasts'>
                         <div>
                         <h1>Read Us</h1>
+                        <ol>
                             <li>
                             <Link to="/readus/euphoricrecall">Euphoric Recall</Link>
                             </li>
@@ -54,6 +58,7 @@ const Footer = () => {
                             <li>
                             <Link to="/news/einstein/">How Sleep Impacts the Brain</Link>
                             </li>
+                        </ol>
                         </div>
                     </section>
                     <section>
