@@ -12,7 +12,7 @@ function Split({ imgOne, imgTwo }) {
                     <p>The average IQ is 100. Roughly 68% of people have an IQ between 85 and 115. What's your IQ?</p>
                 </div>
                 <div className="split-piece split-right">
-                    <h1>(IQ Score Analysis) <br />Complete IQ Profile for just <br /> $2.99! <br /> </h1>
+                    <h1>(IQ Score Analysis) <br />Complete IQ Profile for just <br /> $4.95! <br /> </h1>
                     <div className="split-right-image">
                         <img src={imgTwo} alt="price" />
                     </div>

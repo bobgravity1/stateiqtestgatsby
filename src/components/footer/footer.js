@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactComponentElement } from 'react';
 import logo from '../../images/logo-text-inverse.svg';
 import facebook from '../../images/facebook.svg';
 import twitter from '../../images/twitter.svg';
@@ -31,12 +30,18 @@ const Footer = () => {
                             <li>
                             <Link to="/readus/privacypolicy">Privacy Policy</Link>
                             </li>
+                        </ol>
+                        <ol>
                             <li>
                             <Link to="/readus/cookiepolicy">Cookie Policy</Link>
                             </li>
+                        </ol>
+                        <ol>
                             <li>
                             <Link to="/readus/termsofservice">Terms and Conditions</Link>
                             </li>
+                        </ol>
+                        <ol>
                             <li>
                             <Link to="/readus/disclaimer">Disclaimer</Link>
                             </li>
@@ -49,12 +54,18 @@ const Footer = () => {
                             <li>
                             <Link to="/readus/euphoricrecall">Euphoric Recall</Link>
                             </li>
+                        </ol>
+                        <ol>
                             <li>
                             <Link to="/readus/raiseyouriq/">5 Ways to Increase Your IQ!</Link>
                             </li>
+                        </ol>
+                        <ol>
                             <li>
                             <Link to="/whyourtest/">Why our IQ Test?</Link>
                             </li>
+                        </ol>
+                        <ol>
                             <li>
                             <Link to="/news/einstein/">How Sleep Impacts the Brain</Link>
                             </li>
@@ -67,16 +78,23 @@ const Footer = () => {
                             <li>
                             <Link to="/news/booksvsscreens/">Books vs Screens</Link>
                             </li>
+                        </ol>
+                        <ol>
                             <li>
                             <Link to="/news/raveniq/">What is a Ravens IQ?</Link>
                             </li>
+                        </ol>
+                        <ol>
                             <li>
                             <Link to="/news/zombieplants/">Zombie Plants?</Link>
                             </li>
+                        </ol>
+                        <ol>
                             <li>
                             <Link to="/news/5chernobylfacts/">5 Chernobyl Facts</Link>
                             </li>
                         </ol>
+                       
                     </section>
                 </ul>
             </div>

@@ -7,13 +7,7 @@ module.exports = {
     author: "STATEIQTEST LIMITED",
     image:"/logo.svg",
     url: "https://www.stateiqtest.org",
-    description:"IQ stands for Intelligence Quotient and is a measure of standard intelligence. This IQ test is free to take, a deeper analysis of your IQ score is also available for $2.99.",
-    plugins: [
-      {
-        resolve: 'gatsby-plugin-html-attributes',
-        options: { lang: 'en-US' }
-      }
-    ]
+    description:"IQ stands for Intelligence Quotient and is a measure of standard intelligence. This IQ test is free to take, a deeper analysis of your IQ score is also available for $2.99."
   },
   plugins: [
     
@@ -36,7 +30,12 @@ module.exports = {
       path: `${__dirname}/src/images`,
     },
   },
-
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+      lang: 'en-US'
+      }
+  },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
