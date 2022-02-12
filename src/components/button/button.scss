@@ -26,7 +26,6 @@
 		transition: all .4s ease-in;     
 		&:hover {
 			background-color: rgb(255, 101, 178);
-			box-shadow: 1.5px 4px 22px 0px rgba(255, 101, 178, 0.5)
 		}
 	}
 	.blue {
@@ -35,7 +34,6 @@
 		transition: .4s all;
 		&:hover {
 			background-color: rgb(57, 174, 252);
-			box-shadow: 1.5px 4px 22px 0px rgb(57, 174, 252, .5);
 		}
 	}
 
