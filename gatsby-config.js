@@ -17,9 +17,9 @@ module.exports = {
           fonts: [
               `Roboto:300,400,500,600,700`  ,
               `Oswald:300,400,500,600,700 `,    
-             `Cabin:300,400,500,600,700`,
+              `Cabin:300,400,500,600,700`,
           ], display: 'swap'       
-      }
+      },
   },
 
   `gatsby-plugin-react-helmet`,
@@ -33,9 +33,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-html-attributes',
       options: {
-      lang: 'en-US'
+      lang: 'en-US',
       }
-  },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -210,6 +210,7 @@ const spatialType = [
           {id:nanoid(),value:'E'},
         ]
       },
+      
       {
         id: nanoid(),
         title: "Question Fifteen",
