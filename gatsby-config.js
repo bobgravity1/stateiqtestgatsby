@@ -18,9 +18,13 @@ module.exports = {
               `Roboto:300,400,500,600,700`  ,
               `Oswald:300,400,500,600,700 `,    
               `Cabin:300,400,500,600,700`,
-          ], display: 'swap'       
+          ], 
+          display: "swap",
+          attributes: {
+            rel: "stylesheet preload prefetch",
+          },
       },
-  },
+    },
 
   `gatsby-plugin-react-helmet`,
   {

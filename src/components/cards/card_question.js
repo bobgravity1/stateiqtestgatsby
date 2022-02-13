@@ -8,8 +8,8 @@ import {QuestionsStateContext} from '../../context/GlobalContextProvider'
 const Card_Question = ({data}) => {
   // const image = data?.avatar?.childImageSharp?.gatsbyImageData (syntax)
   const state=useContext(QuestionsStateContext)
-  let question=state.question[0]
-  let photoSrc=question.questionPhoto.value;
+  const question=state.question[0]
+  const photoSrc=question.questionPhoto.value;
     return (
         <>
         <div className='cardquestion'>
