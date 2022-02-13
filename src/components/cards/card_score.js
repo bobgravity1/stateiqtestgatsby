@@ -26,7 +26,7 @@ const Card_score = ({
           {scoreLoading===true?<article className='cardscore-loading'><p className='cardscore-loading-text'>Calculating Free Score.<br /> One Moment Please...<Loading /></p></article>:
           <>
           <article className='cardscore-container'>
-          <img style={style} src={image} />
+          <img style={style} src={image} alt=""/>
             <h1 className='cardscore-title'>{title}<span>{score&&score}</span></h1>
             <p className='cardscore-subtitle'>{subtitle}</p>
             <Scoreoptionbuttons 
