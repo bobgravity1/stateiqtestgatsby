@@ -49,6 +49,10 @@ const testReducer=(state, action)=>{
                     ...state
                 }
             }  
+            default:
+                return{
+                    ...state
+                };
 }
 
     
