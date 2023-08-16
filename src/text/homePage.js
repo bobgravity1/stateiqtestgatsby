@@ -9,25 +9,22 @@ export const bannerText={
 export const threeColumnText=[
     {
         header:`What is an IQ test?`,
-        text:`IQ stands for intelligence quotient. 
-        An IQ test measures your intelligence. 
-        This test gives you a score in three different 
-        categories. The average for each is 100. Come and find 
-        out`
+        text:`IQ stands for intellectual quotient. 
+        The purpose of an IQ test is to provide an 
+        accurate measurement of intellectual ability.`
     },
     {
         header:`How it works`,
-        text:`IQ tests seek to measure your fluid 
-        reasoning skills. Average IQ scores range 
-        from 85-115 - The average being 100. Roughly 
-        66% of the population falls within this range.`
+        text:`We use data driven analysis to back up our 
+        results. Average IQ scores range from 85-115- 
+        roughly two thirds of the population falls 
+        within this range.`
     },
     {
-        header:`About Us`,
-        text:`We offer the opportunity to test your IQ 
-        in a place where your results will be kept confidential.
-        We also offer a full cognitive analysis of your score 
-        for an unbeatable price.`
+        header:`More About Us`,
+        text:`To read more about our contributions to 
+        IQ testing and the underlying concepts behind 
+        our research, please visit the about us section.`
     },
     ]
 
